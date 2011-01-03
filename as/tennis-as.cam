@@ -2,11 +2,11 @@
   <header>
     <modeluuid>FBDD744F-E294-4493-F573-4B405DE6AA64</modeluuid>
     <modeltype>cam</modeltype>
-    <authoruuid>7a7984a1-5d5f-42a3-b5ae-b3522072ba40</authoruuid>
-    <authorname>maarten</authorname>
+    <authoruuid>ed994594-9937-4b4f-9307-f5c2ff07381c</authoruuid>
+    <authorname>elviejokike</authorname>
     <authorisation>readwrite</authorisation>
     <creationtime>1294047665435</creationtime>
-    <updatetime>1294050923306</updatetime>
+    <updatetime>1294087106593</updatetime>
     <title>tennis-as</title>
     <description>Tennis - Adaptive introduction course to tennis.</description>
   </header>
@@ -22,7 +22,7 @@
               <authorname/>
               <authorisation>readwrite</authorisation>
               <creationtime>1253890206022</creationtime>
-              <updatetime>1294049573177</updatetime>
+              <updatetime>1294086827984</updatetime>
               <title>start</title>
               <description>Start CRT</description>
             </header>
@@ -37,13 +37,14 @@
                 </visualrepresentation>
                 <adaptationbehaviour>
                   <code type="gale"><![CDATA[%self% {
+
   start `true`
-}
-]]></code>
+
+}]]></code>
                   <usermodel/>
                 </adaptationbehaviour>
                 <constraints>
-                  <loopsallowed>true</loopsallowed>
+                  <loopsallowed>false</loopsallowed>
                   <attributeconstraints/>
                   <umvariableconstraints/>
                 </constraints>
@@ -67,7 +68,7 @@
               <authorname/>
               <authorisation>read</authorisation>
               <creationtime>1267542224242</creationtime>
-              <updatetime>1294050846601</updatetime>
+              <updatetime>1294086168203</updatetime>
               <title>G-Layout</title>
               <description>GRAPPLE Default: Layout CRT</description>
             </header>
@@ -85,7 +86,31 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
   #layout:String `
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -93,7 +118,31 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
   <view name="static-tree-view" />
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -101,7 +150,31 @@
 
 
 
-    <view name="file-view" file="gale:/grapple/header.xhtml" />
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -109,7 +182,31 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
    <p><hr />Next suggested concept to study: <view name="next-view" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -117,7 +214,31 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 </struct>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -182,11 +303,80 @@
             <colour>0</colour>
             <shape>SocketShape</shape>
             <position>
-              <x>183.5</x>
-              <y>187</y>
+              <x>243</x>
+              <y>194.5</y>
             </position>
             <entity>
               <dmId>DB997C9C-1C8F-0D9B-4D80-48E615F2F29A</dmId>
+            </entity>
+            <entity>
+              <dmId>A912DA78-5883-16BD-8DE1-4936F2154290</dmId>
+            </entity>
+            <entity>
+              <dmId>26A9E256-8F2D-EF9B-17BC-4934E1A401A6</dmId>
+            </entity>
+            <entity>
+              <dmId>4583D951-1417-0428-0E94-49334A2BF63B</dmId>
+            </entity>
+            <entity>
+              <dmId>D87A4A1A-B111-A33A-E152-492934CFF5B5</dmId>
+            </entity>
+            <entity>
+              <dmId>271F252C-DEFF-2263-9631-492776953073</dmId>
+            </entity>
+            <entity>
+              <dmId>13E74AA1-BAFA-2B27-528F-4925A2BF5BA7</dmId>
+            </entity>
+            <entity>
+              <dmId>2E4FA1A2-202B-8194-8AA9-492307158FAC</dmId>
+            </entity>
+            <entity>
+              <dmId>68A17711-718A-74D9-4988-49216FDB8F77</dmId>
+            </entity>
+            <entity>
+              <dmId>05AEEA86-B297-25B6-5A86-491E3C660A5F</dmId>
+            </entity>
+            <entity>
+              <dmId>87CE5516-5B59-C4F6-8979-491C99F1BB71</dmId>
+            </entity>
+            <entity>
+              <dmId>D8AC23F0-1B53-2190-8127-491AB9B72B54</dmId>
+            </entity>
+            <entity>
+              <dmId>AB7FC69C-359F-4F10-FD36-49139067AE55</dmId>
+            </entity>
+            <entity>
+              <dmId>FB77811D-38B5-E91A-29B7-4910A0153FC9</dmId>
+            </entity>
+            <entity>
+              <dmId>20FC4E2F-F595-C1BE-8987-490E0566CF9E</dmId>
+            </entity>
+            <entity>
+              <dmId>2E6A61AE-6924-D236-B4E5-490C6A05E47B</dmId>
+            </entity>
+            <entity>
+              <dmId>BD6AAEFA-03D9-0825-751B-490A6D89A425</dmId>
+            </entity>
+            <entity>
+              <dmId>049E5BED-3F62-4E64-9779-4908EB0003D3</dmId>
+            </entity>
+            <entity>
+              <dmId>A21B7498-FBC0-EFD0-DE8B-4907118D3FB3</dmId>
+            </entity>
+            <entity>
+              <dmId>BD38A72B-8D36-2BFC-0018-4904A6B79F8C</dmId>
+            </entity>
+            <entity>
+              <dmId>95C5A81B-410A-7014-CAC7-49030F10CC4E</dmId>
+            </entity>
+            <entity>
+              <dmId>2BD78979-6285-6B27-A243-49012810B4FA</dmId>
+            </entity>
+            <entity>
+              <dmId>1B0BBC91-14A6-E71F-8521-48F804D41B0B</dmId>
+            </entity>
+            <entity>
+              <dmId>81E9A4B1-4D31-F963-5367-48E92DD1EA35</dmId>
             </entity>
           </camSocket>
         </crt>
