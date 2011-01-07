@@ -15,7 +15,7 @@
 	</gale:then>
 	</gale:if>
 
-	<gale:test title="Pre-Test for the Tennis Course" total="1" action="#{#knowledge, value};#{#done, true};" expr="!${#done}" ask="1" alt="[You are not allowed to repeat this test.]" verbose="true">
+	<gale:test title="Pre-Test for the Tennis Course" total="1" action="#{#knowledge, value};#{#done, true};" expr="true" ask="3" alt="[You are not allowed to repeat this test.]" verbose="true">
 	
 	<p>
 	This is a short test to verify your knowledge about adaptive Tennis.
@@ -28,6 +28,24 @@
 	True or False: Is Tennis an Olimpic sport?.
 		<gale:answer correct="true">True	</gale:answer>
 		<gale:answer correct="false">False	</gale:answer>
+	</gale:question>
+	
+	
+	<gale:question answers="3" right="1">
+	Who is the actual number 1 in the ATP classification?.
+		<gale:answer correct="false">Roger Federer	</gale:answer>
+		<gale:answer correct="true">Rafael Nadal	</gale:answer>
+		<gale:answer correct="false">Nova Djokovic	</gale:answer>
+	</gale:question>
+	
+	
+	<gale:question answers="4" right="1">
+		Who is this girl?.
+		<p><img src="http://www.celebs101.com/media/2010/7/14/Ana%20Ivanovic.jpg"></img></p>	
+		<gale:answer correct="false">Justine Hennin</gale:answer>
+		<gale:answer correct="true">Ana Ivanovic	</gale:answer>
+		<gale:answer correct="false"> Virginia Slims	</gale:answer>
+		<gale:answer correct="false"> Ana Kurnikova	</gale:answer>
 	</gale:question>
 	
 	<gale:result>
