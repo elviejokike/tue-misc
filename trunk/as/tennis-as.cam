@@ -18,8 +18,8 @@
             <header>
               <modeluuid>aaaaaaaa-12b5-4720-92e5-736cac59985b</modeluuid>
               <modeltype>crt</modeltype>
-              <authoruuid>null</authoruuid>
-              <authorname/>
+              <authoruuid>ed994594-9937-4b4f-9307-f5c2ff07381c</authoruuid>
+    		  <authorname>test1</authorname>
               <authorisation>readwrite</authorisation>
               <creationtime>1253890206022</creationtime>
               <updatetime>1294086827984</updatetime>
@@ -156,8 +156,8 @@
             <header>
               <modeluuid>cf5de7f5-12b5-4720-92e5-736cac59985b</modeluuid>
               <modeltype>crt</modeltype>
-              <authoruuid>null</authoruuid>
-              <authorname/>
+              <authoruuid>ed994594-9937-4b4f-9307-f5c2ff07381c</authoruuid>
+    		  <authorname>test1</authorname>
               <authorisation>readwrite</authorisation>
               <creationtime>1253890007331</creationtime>
               <updatetime>0</updatetime>
