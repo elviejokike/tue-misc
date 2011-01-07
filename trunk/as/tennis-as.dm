@@ -1,9 +1,9 @@
 <model>
   <header>
-    <modeluuid>9051EBF6-B9D3-5E5E-B35E-60408174052D</modeluuid>
+    <modeluuid>6BB6BB29-376B-290F-D557-607DC65A4772</modeluuid>
     <modeltype>dm</modeltype>
-    <authoruuid>7a7984a1-5d5f-42a3-b5ae-b3522072ba40</authoruuid>
-    <authorname>maarten</authorname>
+    <authoruuid>ed994594-9937-4b4f-9307-f5c2ff07381c</authoruuid>
+    <authorname>test1</authorname>
     <authorisation>readwrite</authorisation>
     <creationtime>1294008161375</creationtime>
     <updatetime>1294094737062</updatetime>
@@ -13,7 +13,7 @@
   <body>
     <dm>
       <vdex>
-        <term x="328" y="168">
+        <term x="328" y="178">
           <termIdentifier>DB997C9C-1C8F-0D9B-4D80-48E615F2F29A</termIdentifier>
           <caption>
             <langstring language="x-none">TENNIS</langstring>
@@ -45,7 +45,7 @@
             </interpretationNote>
           </mediaDescriptor>
         </term>
-        <term x="219" y="109">
+        <term x="219" y="119">
           <termIdentifier>81E9A4B1-4D31-F963-5367-48E92DD1EA35</termIdentifier>
           <caption>
             <langstring language="x-none">pre-test</langstring>
@@ -107,7 +107,7 @@
             </interpretationNote>
           </mediaDescriptor>
         </term>
-        <term x="93" y="263">
+        <term x="93" y="273">
           <termIdentifier>1B0BBC91-14A6-E71F-8521-48F804D41B0B</termIdentifier>
           <caption>
             <langstring language="x-none">Introduction</langstring>
@@ -169,7 +169,7 @@
             </interpretationNote>
           </mediaDescriptor>
         </term>
-        <term x="31" y="330">
+        <term x="31" y="340">
           <termIdentifier>2BD78979-6285-6B27-A243-49012810B4FA</termIdentifier>
           <caption>
             <langstring language="x-none">History</langstring>
@@ -225,7 +225,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="94" y="372">
+        <term x="94" y="382">
           <termIdentifier>95C5A81B-410A-7014-CAC7-49030F10CC4E</termIdentifier>
           <caption>
             <langstring language="x-none">Equipment</langstring>
@@ -281,7 +281,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="166" y="337">
+        <term x="166" y="347">
           <termIdentifier>BD38A72B-8D36-2BFC-0018-4904A6B79F8C</termIdentifier>
           <caption>
             <langstring language="x-none">test_introduction</langstring>
@@ -337,7 +337,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="328" y="270">
+        <term x="328" y="280">
           <termIdentifier>A21B7498-FBC0-EFD0-DE8B-4907118D3FB3</termIdentifier>
           <caption>
             <langstring language="x-none">game</langstring>
@@ -393,7 +393,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="296" y="341">
+        <term x="296" y="351">
           <termIdentifier>049E5BED-3F62-4E64-9779-4908EB0003D3</termIdentifier>
           <caption>
             <langstring language="x-none">how_to_play</langstring>
@@ -449,7 +449,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="157" y="471">
+        <term x="157" y="481">
           <termIdentifier>BD6AAEFA-03D9-0825-751B-490A6D89A425</termIdentifier>
           <caption>
             <langstring language="x-none">court</langstring>
@@ -505,7 +505,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="383" y="479.5">
+        <term x="383" y="489.5">
           <termIdentifier>2E6A61AE-6924-D236-B4E5-490C6A05E47B</termIdentifier>
           <caption>
             <langstring language="x-none">Lines</langstring>
@@ -561,7 +561,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="432" y="446.5">
+        <term x="432" y="456.5">
           <termIdentifier>20FC4E2F-F595-C1BE-8987-490E0566CF9E</termIdentifier>
           <caption>
             <langstring language="x-none">surface</langstring>
@@ -617,7 +617,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="245" y="479.5">
+        <term x="245" y="489.5">
           <termIdentifier>FB77811D-38B5-E91A-29B7-4910A0153FC9</termIdentifier>
           <caption>
             <langstring language="x-none">scoring</langstring>
@@ -673,7 +673,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="311" y="482.5">
+        <term x="311" y="492.5">
           <termIdentifier>AB7FC69C-359F-4F10-FD36-49139067AE55</termIdentifier>
           <caption>
             <langstring language="x-none">rulevar</langstring>
@@ -729,7 +729,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="400" y="340">
+        <term x="400" y="350">
           <termIdentifier>D8AC23F0-1B53-2190-8127-491AB9B72B54</termIdentifier>
           <caption>
             <langstring language="x-none">test_howtoplay</langstring>
@@ -785,7 +785,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="546" y="247">
+        <term x="546" y="257">
           <termIdentifier>87CE5516-5B59-C4F6-8979-491C99F1BB71</termIdentifier>
           <caption>
             <langstring language="x-none">shots</langstring>
@@ -847,7 +847,7 @@
             </interpretationNote>
           </mediaDescriptor>
         </term>
-        <term x="476" y="325">
+        <term x="476" y="335">
           <termIdentifier>05AEEA86-B297-25B6-5A86-491E3C660A5F</termIdentifier>
           <caption>
             <langstring language="x-none">forehand</langstring>
@@ -903,7 +903,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="582" y="332.5">
+        <term x="582" y="342.5">
           <termIdentifier>68A17711-718A-74D9-4988-49216FDB8F77</termIdentifier>
           <caption>
             <langstring language="x-none">backhand</langstring>
@@ -959,7 +959,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="507" y="385">
+        <term x="507" y="395">
           <termIdentifier>2E4FA1A2-202B-8194-8AA9-492307158FAC</termIdentifier>
           <caption>
             <langstring language="x-none">serve</langstring>
@@ -1015,7 +1015,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="549" y="385">
+        <term x="549" y="395">
           <termIdentifier>13E74AA1-BAFA-2B27-528F-4925A2BF5BA7</termIdentifier>
           <caption>
             <langstring language="x-none">other_shots</langstring>
@@ -1071,7 +1071,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="519" y="454">
+        <term x="519" y="464">
           <termIdentifier>271F252C-DEFF-2263-9631-492776953073</termIdentifier>
           <caption>
             <langstring language="x-none">ground_stroke</langstring>
@@ -1127,7 +1127,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="583" y="456.5">
+        <term x="583" y="466.5">
           <termIdentifier>D87A4A1A-B111-A33A-E152-492934CFF5B5</termIdentifier>
           <caption>
             <langstring language="x-none">ace</langstring>
@@ -1183,7 +1183,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="618" y="451.5">
+        <term x="618" y="461.5">
           <termIdentifier>4583D951-1417-0428-0E94-49334A2BF63B</termIdentifier>
           <caption>
             <langstring language="x-none">topspin</langstring>
@@ -1239,7 +1239,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="634" y="309.5">
+        <term x="634" y="319.5">
           <termIdentifier>26A9E256-8F2D-EF9B-17BC-4934E1A401A6</termIdentifier>
           <caption>
             <langstring language="x-none">test_shots</langstring>
@@ -1295,7 +1295,7 @@
             </concept>
           </metadata>
         </term>
-        <term x="419" y="119.5">
+        <term x="426" y="127.5">
           <termIdentifier>A912DA78-5883-16BD-8DE1-4936F2154290</termIdentifier>
           <caption>
             <langstring language="x-none">tournaments</langstring>
@@ -1357,7 +1357,7 @@
             </interpretationNote>
           </mediaDescriptor>
         </term>
-        <term x="532" y="63.5">
+        <term x="532" y="73.5">
           <termIdentifier>F8821DEB-2E95-A4CB-01D9-4DC9EDFE6DFF</termIdentifier>
           <caption>
             <langstring language="x-none">grandslam</langstring>
@@ -1419,7 +1419,7 @@
             </interpretationNote>
           </mediaDescriptor>
         </term>
-        <term x="543" y="114.5">
+        <term x="543" y="124.5">
           <termIdentifier>F5FC3FF7-7BA4-23A1-E2E3-4DCB7980262B</termIdentifier>
           <caption>
             <langstring language="x-none">master1000</langstring>
@@ -1481,7 +1481,7 @@
             </interpretationNote>
           </mediaDescriptor>
         </term>
-        <term x="492" y="193.5">
+        <term x="492" y="203.5">
           <termIdentifier>E9D9BFBA-8A50-CA9F-A03C-4DCC62D700E9</termIdentifier>
           <caption>
             <langstring language="x-none">250to500Series</langstring>
@@ -1543,7 +1543,7 @@
             </interpretationNote>
           </mediaDescriptor>
         </term>
-        <term x="580" y="165.5">
+        <term x="580" y="175.5">
           <termIdentifier>80168CA4-A9A3-E8BE-EF36-4DCD43347CFE</termIdentifier>
           <caption>
             <langstring language="x-none">challenger</langstring>
