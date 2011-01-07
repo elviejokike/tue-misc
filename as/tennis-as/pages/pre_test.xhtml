@@ -7,33 +7,34 @@
   <title>Pre-Test</title>
 </head>
 <body>
-<gale:if expr="${#done}"><gale:then>
-<h1>Pre-Test Result</h1>
-<p>
-Your test score was <gale:variable expr="${#knowledge}.intValue()" />.
-</p>
-</gale:then>
-</gale:if>
-<gale:test title="Pre-Test for the Tennis Course" total="1" action="#{#knowledge, value};#{#done, true};" expr="!${#done}" ask="5" alt="[You are not allowed to repeat this test.]" verbose="true">
+	<gale:if expr="${#done}"><gale:then>
+	<h1>Pre-Test Result</h1>
+	<p>
+	Your test score was <gale:variable expr="${#knowledge}.intValue()" />.
+	</p>
+	</gale:then>
+	</gale:if>
 
-
-<p>
-This is a short test to verify your knowledge about adaptive Tennis.
-Your score for this test may influence some of the adaptation in the tutorial but is otherwise
-not important.
-</p>
-
-
-<gale:question answers="2" right="1">
-True or False: Is Tennis an Olimpic sport?.
-<gale:answer correct="true">True
-</gale:answer>
-<gale:answer correct="false">False
-</gale:answer>
-</gale:question>
-<gale:result>
-Your score was <gale:variable expr="${#knowledge}.intValue()" />. 
-</gale:result>
-</gale:test>
+	<gale:test title="Pre-Test for the Tennis Course" total="1" action="#{#knowledge, value};#{#done, true};" expr="!${#done}" ask="1" alt="[You are not allowed to repeat this test.]" verbose="true">
+	
+	<p>
+	This is a short test to verify your knowledge about adaptive Tennis.
+	Your score for this test may influence some of the adaptation in the tutorial but is otherwise
+	not important.
+	</p>
+	
+	
+	<gale:question answers="2" right="1">
+	True or False: Is Tennis an Olimpic sport?.
+		<gale:answer correct="true">True	</gale:answer>
+		<gale:answer correct="false">False	</gale:answer>
+	</gale:question>
+	
+	<gale:result>
+	Your score was <gale:variable expr="${#knowledge}.intValue()" />. 
+	</gale:result>
+	
+	</gale:test>
 
 </body>
+</html>
