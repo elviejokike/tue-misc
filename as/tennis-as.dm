@@ -100,6 +100,12 @@
               </lom>
             </concept>
           </metadata>
+          <mediaDescriptor>
+            <mediaLocator>gale:/tennis-as/pages/pre_test.xhtml</mediaLocator>
+            <interpretationNote>
+              <langstring language="x-none">5842571E-35F1-6B63-EBB8-5FB059427CA0</langstring>
+            </interpretationNote>
+          </mediaDescriptor>
         </term>
         <term x="93" y="242">
           <termIdentifier>1B0BBC91-14A6-E71F-8521-48F804D41B0B</termIdentifier>
@@ -828,6 +834,12 @@
               </lom>
             </concept>
           </metadata>
+          <mediaDescriptor>
+            <mediaLocator>gale:/tennis-as/pages/shots/shots.xhtml</mediaLocator>
+            <interpretationNote>
+              <langstring language="x-none">81E8B593-BA56-A54A-2684-5FC2D447A0A9</langstring>
+            </interpretationNote>
+          </mediaDescriptor>
         </term>
         <term x="476" y="304">
           <termIdentifier>05AEEA86-B297-25B6-5A86-491E3C660A5F</termIdentifier>
@@ -1339,7 +1351,7 @@
             </interpretationNote>
           </mediaDescriptor>
         </term>
-        <term x="511" y="67.5">
+        <term x="511" y="66.5">
           <termIdentifier>F8821DEB-2E95-A4CB-01D9-4DC9EDFE6DFF</termIdentifier>
           <caption>
             <langstring language="x-none">grandslam</langstring>
@@ -1394,6 +1406,12 @@
               </lom>
             </concept>
           </metadata>
+          <mediaDescriptor>
+            <mediaLocator>gale:/tennis-as/pages/tournaments/grandslam.xhtml</mediaLocator>
+            <interpretationNote>
+              <langstring language="x-none">71DF496D-D76B-81E7-45DB-5FC152B6D9DE</langstring>
+            </interpretationNote>
+          </mediaDescriptor>
         </term>
         <term x="538" y="110.5">
           <termIdentifier>F5FC3FF7-7BA4-23A1-E2E3-4DCB7980262B</termIdentifier>
@@ -1450,6 +1468,12 @@
               </lom>
             </concept>
           </metadata>
+          <mediaDescriptor>
+            <mediaLocator>gale:/tennis-as/pages/tournaments/master1000.xhtml</mediaLocator>
+            <interpretationNote>
+              <langstring language="x-none">A91CC01D-480D-185B-629D-5FC1D1C5923F</langstring>
+            </interpretationNote>
+          </mediaDescriptor>
         </term>
         <term x="505" y="148.5">
           <termIdentifier>E9D9BFBA-8A50-CA9F-A03C-4DCC62D700E9</termIdentifier>
@@ -1506,6 +1530,12 @@
               </lom>
             </concept>
           </metadata>
+          <mediaDescriptor>
+            <mediaLocator>gale:/tennis-as/pages/tournaments/200to250.xhtml</mediaLocator>
+            <interpretationNote>
+              <langstring language="x-none">CFD41A49-6795-3012-CC39-5FC21BE05A7B</langstring>
+            </interpretationNote>
+          </mediaDescriptor>
         </term>
         <term x="580" y="144.5">
           <termIdentifier>80168CA4-A9A3-E8BE-EF36-4DCD43347CFE</termIdentifier>
@@ -1562,6 +1592,12 @@
               </lom>
             </concept>
           </metadata>
+          <mediaDescriptor>
+            <mediaLocator>gale:/tennis-as/pages/tournaments/challenger.xhtml</mediaLocator>
+            <interpretationNote>
+              <langstring language="x-none">947B7296-4FA1-1FEE-978B-5FC25B403797</langstring>
+            </interpretationNote>
+          </mediaDescriptor>
         </term>
         <relationship>
           <sourceTerm>81E9A4B1-4D31-F963-5367-48E92DD1EA35</sourceTerm>
