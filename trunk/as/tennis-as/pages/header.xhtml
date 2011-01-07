@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xhtml:span xmlns="http://gale.tue.nl/adaptation"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<variable name="gale://gale.tue.nl/personal#name" />
+(<variable name="gale://gale.tue.nl/personal#email" />)
+has read
+<count method="done" uri="gale://gale.tue.nl/cam/tennis-as" />
+page<if expr="CountModule.getNonVisitedUriCache(URI.create(&quot;gale://gale.tue.nl/cam/tennis-as/&quot;),gale).length > 1"><then>s</then></if>
+ and still has 
+<count method="todo" uri="gale://gale.tue.nl/cam/tennis-as" />
+to read -
+<a href="gale://gale.tue.nl/admin/done?root=gale://gale.tue.nl/cam/tennis-as">list of read pages</a>
+-
+<a href="gale://gale.tue.nl/admin/todo?root=gale://gale.tue.nl/cam/tennis-as">pages still to be read</a>
+
+	<xhtml:br />Options in stand-alone mode:
+	<if expr="!gale.userId().startsWith(&quot;AHA_&quot;)"> <block>
+	<xhtml:a>change password<attr-variable name="href" expr="&quot;gale://gale.tue.nl/admin/password?redirect=&quot;+java.net.URLEncoder.encode(gale.req().getRequestURL().toString(),&quot;UTF-8&quot;)"/><adapt-link/></xhtml:a></block> </if>
+	<if
+		expr="&quot;true&quot;.equals( ((UserEntity)gale.uec().get(gale.userUri())).getProperty(&quot;author&quot;))">
+	<block> - <handler> <name>CAF</name> <linkdescription>import
+	CAF</linkdescription> </handler> - <handler> <name>aha3</name> <linkdescription>import
+	AHA! 3</linkdescription> </handler> </block> </if>
+	<if
+		expr="GaleUtil.digest(gale.req().getSession().getAttribute(&quot;galeadmin&quot;)+&quot;&quot;).equals(GaleUtil.adminpw)">
+	<block> - <handler> <name>Admin</name> <linkdescription>administration</linkdescription>
+	</handler> </block> </if>
+-
+<plugin> <name>logout</name> <linkdescription>logout</linkdescription>
+	</plugin>
+	<xhtml:hr />
+</xhtml:span>
