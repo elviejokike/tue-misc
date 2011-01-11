@@ -1,11 +1,11 @@
 <model>
   <header>
-    <modeluuid>5FA254B1-7865-B3EC-E1C2-74ABE5627070</modeluuid>
+    <modeluuid>FD41FE91-B2DE-C240-C474-74AED613721B</modeluuid>
     <modeltype>cam</modeltype>
     <authoruuid>ed994594-9937-4b4f-9307-f5c2ff07381c</authoruuid>
     <authorisation>readwrite</authorisation>
     <creationtime>1294742195876</creationtime>
-    <updatetime>1294742596999</updatetime>
+    <updatetime>1294742790657</updatetime>
     <title>tennis-as</title>
     <description>Tennis</description>
   </header>
@@ -174,6 +174,30 @@
             <position>
               <x>159.5</x>
               <y>334</y>
+            </position>
+            <entity>
+              <dmId>81E9A4B1-4D31-F963-5367-48E92DD1EA35</dmId>
+            </entity>
+          </camSocket>
+        </crt>
+        <crt type="crt">
+          <camCrtUuid>41EE14C0-2025-992A-305B-74AE6EAF0278</camCrtUuid>
+          <uuid>32791D5A-E3A1-DDD4-FA15-746E84431B2F</uuid>
+          <shape>diamond</shape>
+          <colour>#000000</colour>
+          <parameter name="" type=""/>
+          <position>
+            <x>1109</x>
+            <y>410</y>
+          </position>
+          <camSocket>
+            <uuid>F23258B2-ED05-EA55-64C1-74AE6EAF05AD</uuid>
+            <socketid>da89acde-3cf6-e8be-1600-74652cd6df6f</socketid>
+            <colour>0</colour>
+            <shape>SocketShape</shape>
+            <position>
+              <x>434.5</x>
+              <y>48</y>
             </position>
             <entity>
               <dmId>81E9A4B1-4D31-F963-5367-48E92DD1EA35</dmId>
@@ -369,6 +393,142 @@
                 <crtsockets>
                   <socket type="self">
                     <uuid>52f4714b-bb75-93c5-7cfd-606094d46aec</uuid>
+                    <name>self</name>
+                    <mincardinality>*</mincardinality>
+                    <maxcardinality>*</maxcardinality>
+                  </socket>
+                </crtsockets>
+                <associateddmrelations/>
+              </crt>
+            </body>
+          </model>
+          <model>
+            <header>
+              <modeluuid>32791D5A-E3A1-DDD4-FA15-746E84431B2F</modeluuid>
+              <modeltype>crt</modeltype>
+              <authoruuid>ed994594-9937-4b4f-9307-f5c2ff07381c</authoruuid>
+              <authorname>test1</authorname>
+              <authorisation>readwrite</authorisation>
+              <creationtime>1294737881001</creationtime>
+              <updatetime>1294738555971</updatetime>
+              <title>G-Public-Knowledge</title>
+              <description>Public knowledge</description>
+            </header>
+            <body>
+              <crt>
+                <comment/>
+                <crtdialect>CRT</crtdialect>
+                <parameter name="" type=""/>
+                <visualrepresentation>
+                  <colour>#000000</colour>
+                  <shape>diamond</shape>
+                </visualrepresentation>
+                <adaptationbehaviour>
+                  <code type="gale"><![CDATA[%self% {
+  #knowledgeHistory:Float {
+     public `true`
+     authorative `true`
+  }
+ #knowledgeShots:Float {
+     public `true`
+     authorative `true`
+  }
+ #knowledgeGame:Float {
+     public `true`
+     authorative `true`
+  }
+ #knowledgeTournaments:Float {
+     public `true`
+     authorative `true`
+  }
+}]]></code>
+                  <usermodel>
+                    <umvariable>
+                      <umvarname>knowledgeHistory</umvarname>
+                      <socket>self</socket>
+                      <public>false</public>
+                      <persistent>false</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range/>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                    <umvariable>
+                      <umvarname>knowledgeShots</umvarname>
+                      <socket>self</socket>
+                      <public>false</public>
+                      <persistent>false</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range/>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                    <umvariable>
+                      <umvarname>knowledgeGame</umvarname>
+                      <socket>self</socket>
+                      <public>false</public>
+                      <persistent>false</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range/>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                    <umvariable>
+                      <umvarname>knowledgeTournaments</umvarname>
+                      <socket>self</socket>
+                      <public>false</public>
+                      <persistent>false</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range/>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                  </usermodel>
+                </adaptationbehaviour>
+                <constraints>
+                  <loopsallowed>false</loopsallowed>
+                  <attributeconstraints/>
+                  <umvariableconstraints/>
+                </constraints>
+                <crtsockets>
+                  <socket type="self">
+                    <uuid>da89acde-3cf6-e8be-1600-74652cd6df6f</uuid>
                     <name>self</name>
                     <mincardinality>*</mincardinality>
                     <maxcardinality>*</maxcardinality>
@@ -2381,6 +2541,2004 @@
           <model>
             <header>
               <modeluuid>5FA254B1-7865-B3EC-E1C2-74ABE5627070</modeluuid>
+              <modeltype>dm</modeltype>
+              <authoruuid>ed994594-9937-4b4f-9307-f5c2ff07381c</authoruuid>
+              <authorname>test1</authorname>
+              <authorisation>readwrite</authorisation>
+              <creationtime>1294008161375</creationtime>
+              <updatetime>1294094737062</updatetime>
+              <title>tennis-as</title>
+              <description>Tennis - A brief adaptive introduction to tennis</description>
+            </header>
+            <body>
+              <dm>
+                <vdex>
+                  <term x="333" y="150">
+                    <termIdentifier>DB997C9C-1C8F-0D9B-4D80-48E615F2F29A</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">TENNIS</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/tennis_welcome.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">F4320905-A170-816F-FF62-4B475EB5E446</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="223" y="89">
+                    <termIdentifier>81E9A4B1-4D31-F963-5367-48E92DD1EA35</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">pre-test</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Pre-Test</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>1</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Pre-Test</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/pre_test.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">5842571E-35F1-6B63-EBB8-5FB059427CA0</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                    <index>0</index>
+                  </term>
+                  <term x="98" y="245">
+                    <termIdentifier>1B0BBC91-14A6-E71F-8521-48F804D41B0B</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">Introduction</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Introduction</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>100</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Introduction</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/intro/introduction.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">3111BCE4-70F5-F715-8457-602F4E2F50AA</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="36" y="312">
+                    <termIdentifier>2BD78979-6285-6B27-A243-49012810B4FA</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">History</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>110</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>History</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/intro/history.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">CD88D53E-D54A-EBD6-1D09-74337B51065A</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="99" y="354">
+                    <termIdentifier>95C5A81B-410A-7014-CAC7-49030F10CC4E</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">Equipment</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>120</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Equipment</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/intro/equipment.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">8DB36FC7-5FD4-9A21-3438-7433E3AC24BB</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="171" y="319">
+                    <termIdentifier>BD38A72B-8D36-2BFC-0018-4904A6B79F8C</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">test_introduction</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>199</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Test Introduction</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/intro/test_introduction.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">1A18B396-8217-C99E-0636-7434857CD8AE</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="333" y="252">
+                    <termIdentifier>A21B7498-FBC0-EFD0-DE8B-4907118D3FB3</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">game</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Game</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>200</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>The Game</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/game/game.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">FB5EDA74-7101-EFC7-30E7-7435764A4409</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="301" y="323">
+                    <termIdentifier>049E5BED-3F62-4E64-9779-4908EB0003D3</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">how_to_play</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Manner of play</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>210</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Manner of play</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/game/howtoplay.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">57196845-21CF-E9D4-3485-7435D6690E21</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="162" y="453">
+                    <termIdentifier>BD6AAEFA-03D9-0825-751B-490A6D89A425</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">court</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Court</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>211</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Court</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/game/court.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">972680DF-C5B0-EC6D-6F46-743647A5323F</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="388" y="461.5">
+                    <termIdentifier>2E6A61AE-6924-D236-B4E5-490C6A05E47B</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">Lines</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Lines</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>212</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Lines</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/game/lines.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">4FFCAE4F-94CB-5DD1-6AE6-74372792A9F3</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="437" y="428.5">
+                    <termIdentifier>20FC4E2F-F595-C1BE-8987-490E0566CF9E</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">surface</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Surfaces</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>213</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Surfaces</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/game/surfaces.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">2FC19861-73FD-3D9F-29B5-74376D41D49B</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="250" y="461.5">
+                    <termIdentifier>FB77811D-38B5-E91A-29B7-4910A0153FC9</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">scoring</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Scoring</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>215</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Scoring</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/game/scoring.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">012A053D-F87C-42A0-631B-74368C5E106C</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="316" y="464.5">
+                    <termIdentifier>AB7FC69C-359F-4F10-FD36-49139067AE55</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">rulevar</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Rule Variation</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>216</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Rule Variation</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/game/rules.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">9F22819F-6E04-1BA9-58ED-7436F1469C66</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="405" y="322">
+                    <termIdentifier>D8AC23F0-1B53-2190-8127-491AB9B72B54</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">test_howtoplay</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Test how to play</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>299</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Test How to play</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/game/test_howtoplay.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">EEBE55DD-845B-A608-7575-7438DA939359</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="478" y="234">
+                    <termIdentifier>87CE5516-5B59-C4F6-8979-491C99F1BB71</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">shots</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Tennis shots</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>300</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Tennis Shots</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/shots/shots.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">81E8B593-BA56-A54A-2684-5FC2D447A0A9</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="480" y="308">
+                    <termIdentifier>05AEEA86-B297-25B6-5A86-491E3C660A5F</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">forehand</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Forehand</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>310</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Forehand</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/shots/forehand.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">3277B354-83D1-C535-EEDB-743BE49F9227</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="587" y="314.5">
+                    <termIdentifier>68A17711-718A-74D9-4988-49216FDB8F77</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">backhand</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Backhand</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>320</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Backhand</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/shots/backhand.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">F2800266-0AE0-8348-03F7-743F17A9DD2E</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="512" y="367">
+                    <termIdentifier>2E4FA1A2-202B-8194-8AA9-492307158FAC</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">serve</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Serve</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>330</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Serve</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/shots/serve.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">26011857-3F2A-FB39-73F4-743C58108256</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="554" y="367">
+                    <termIdentifier>13E74AA1-BAFA-2B27-528F-4925A2BF5BA7</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">other_shots</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Other shots</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>390</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Other shots</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/shots/other_shots.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">0A29C1AB-DBBE-75BD-2C58-743C90FE23B1</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="524" y="436">
+                    <termIdentifier>271F252C-DEFF-2263-9631-492776953073</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">ground_stroke</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Ground Stroke</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>391</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Ground Stroke</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/shots/ground_stroke.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">373E87AB-017D-742C-51E4-743E1A313FA7</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="588" y="438.5">
+                    <termIdentifier>D87A4A1A-B111-A33A-E152-492934CFF5B5</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">ace</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Ace</langstring>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>392</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Ace</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/shots/ace.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">36C367AB-BBA3-C1B3-4984-743EC2214DDF</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="623" y="433.5">
+                    <termIdentifier>4583D951-1417-0428-0E94-49334A2BF63B</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">topspin</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>393</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Top Spin</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/shots/topspin.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">8242D10C-BFCD-D171-BB00-743EECF02867</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="639" y="291.5">
+                    <termIdentifier>26A9E256-8F2D-EF9B-17BC-4934E1A401A6</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">test_shots</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>399</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Test Shots</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/shots/test_shots.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">CAC5200E-8326-668D-F6AA-743F4CB0B950</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="431" y="99.5">
+                    <termIdentifier>A912DA78-5883-16BD-8DE1-4936F2154290</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">tournaments</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>400</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Tournaments</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/tournaments/tournaments.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">4A46422A-C472-902A-B418-4DB8AD1F2ECE</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="530" y="65.5">
+                    <termIdentifier>F8821DEB-2E95-A4CB-01D9-4DC9EDFE6DFF</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">grandslam</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>410</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Grand Slams</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/tournaments/grandslam.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">71DF496D-D76B-81E7-45DB-5FC152B6D9DE</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="517" y="103.5">
+                    <termIdentifier>F5FC3FF7-7BA4-23A1-E2E3-4DCB7980262B</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">master1000</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>420</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Master 1000</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/tournaments/master1000.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">A91CC01D-480D-185B-629D-5FC1D1C5923F</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="475" y="174.5">
+                    <termIdentifier>E9D9BFBA-8A50-CA9F-A03C-4DCC62D700E9</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">250to500Series</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>430</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>250 and 500 Series</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/tournaments/200to250.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">CFD41A49-6795-3012-CC39-5FC21BE05A7B</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="521" y="150.5">
+                    <termIdentifier>80168CA4-A9A3-E8BE-EF36-4DCD43347CFE</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">challenger</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>type</catalog>
+                              <entry>
+                                <langstring>page</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>order</catalog>
+                              <entry>
+                                <langstring>440</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                      <concept>
+                        <lom>
+                          <general>
+                            <description>
+                              <langstring/>
+                            </description>
+                            <catalogentry>
+                              <catalog>title</catalog>
+                              <entry>
+                                <langstring>Challenger</langstring>
+                              </entry>
+                            </catalogentry>
+                          </general>
+                        </lom>
+                      </concept>
+                    </metadata>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/tournaments/challenger.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">947B7296-4FA1-1FEE-978B-5FC25B403797</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="598" y="41">
+                    <termIdentifier>69F37C1A-0C2B-CF51-8869-74428D568172</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">wimbledon</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none">Information about Wimbledon</langstring>
+                    </description>
+                    <metadata/>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/tournaments/wimbledon.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">439AB796-7FB2-0585-C99B-74450E1AE872</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="633" y="74">
+                    <termIdentifier>CA86A787-C381-68AF-109C-74453EF4F66C</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">roland_garros</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata/>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/tournaments/roland_garros.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">90C64AF4-DF47-F53A-ACA0-74456AE197F8</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="639" y="116">
+                    <termIdentifier>D750D9F7-933B-3636-2C1D-7445B48E6F9A</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">us_open</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata/>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/tournaments/us_open.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">0F73DF49-2BC7-6131-C1B1-7445E0AE1F36</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="623" y="170.5">
+                    <termIdentifier>6DC2D020-4FB0-0C98-EEA5-7446A3A54EFA</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">aus_open</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata/>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/tournaments/aus_open.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">8D6EEC84-9D30-DC54-DF38-7446C206C1FA</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <term x="458" y="51">
+                    <termIdentifier>00D474F8-79DE-94B0-F35C-74497AAB8199</termIdentifier>
+                    <caption>
+                      <langstring language="x-none">test_tournaments</langstring>
+                    </caption>
+                    <description>
+                      <langstring language="x-none"/>
+                    </description>
+                    <metadata/>
+                    <mediaDescriptor>
+                      <mediaLocator>gale:/tennis-as/pages/tournaments/test_tournament.xhtml</mediaLocator>
+                      <interpretationNote>
+                        <langstring language="x-none">AF988489-0A7E-9152-5697-7449A4FCDC1B</langstring>
+                      </interpretationNote>
+                    </mediaDescriptor>
+                  </term>
+                  <relationship>
+                    <sourceTerm>81E9A4B1-4D31-F963-5367-48E92DD1EA35</sourceTerm>
+                    <targetTerm>DB997C9C-1C8F-0D9B-4D80-48E615F2F29A</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>1B0BBC91-14A6-E71F-8521-48F804D41B0B</sourceTerm>
+                    <targetTerm>DB997C9C-1C8F-0D9B-4D80-48E615F2F29A</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>2BD78979-6285-6B27-A243-49012810B4FA</sourceTerm>
+                    <targetTerm>1B0BBC91-14A6-E71F-8521-48F804D41B0B</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>95C5A81B-410A-7014-CAC7-49030F10CC4E</sourceTerm>
+                    <targetTerm>1B0BBC91-14A6-E71F-8521-48F804D41B0B</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>BD38A72B-8D36-2BFC-0018-4904A6B79F8C</sourceTerm>
+                    <targetTerm>1B0BBC91-14A6-E71F-8521-48F804D41B0B</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>A21B7498-FBC0-EFD0-DE8B-4907118D3FB3</sourceTerm>
+                    <targetTerm>DB997C9C-1C8F-0D9B-4D80-48E615F2F29A</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>049E5BED-3F62-4E64-9779-4908EB0003D3</sourceTerm>
+                    <targetTerm>A21B7498-FBC0-EFD0-DE8B-4907118D3FB3</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>BD6AAEFA-03D9-0825-751B-490A6D89A425</sourceTerm>
+                    <targetTerm>049E5BED-3F62-4E64-9779-4908EB0003D3</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>2E6A61AE-6924-D236-B4E5-490C6A05E47B</sourceTerm>
+                    <targetTerm>049E5BED-3F62-4E64-9779-4908EB0003D3</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>20FC4E2F-F595-C1BE-8987-490E0566CF9E</sourceTerm>
+                    <targetTerm>049E5BED-3F62-4E64-9779-4908EB0003D3</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>FB77811D-38B5-E91A-29B7-4910A0153FC9</sourceTerm>
+                    <targetTerm>049E5BED-3F62-4E64-9779-4908EB0003D3</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>AB7FC69C-359F-4F10-FD36-49139067AE55</sourceTerm>
+                    <targetTerm>049E5BED-3F62-4E64-9779-4908EB0003D3</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>D8AC23F0-1B53-2190-8127-491AB9B72B54</sourceTerm>
+                    <targetTerm>A21B7498-FBC0-EFD0-DE8B-4907118D3FB3</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>87CE5516-5B59-C4F6-8979-491C99F1BB71</sourceTerm>
+                    <targetTerm>DB997C9C-1C8F-0D9B-4D80-48E615F2F29A</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>05AEEA86-B297-25B6-5A86-491E3C660A5F</sourceTerm>
+                    <targetTerm>87CE5516-5B59-C4F6-8979-491C99F1BB71</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>68A17711-718A-74D9-4988-49216FDB8F77</sourceTerm>
+                    <targetTerm>87CE5516-5B59-C4F6-8979-491C99F1BB71</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>2E4FA1A2-202B-8194-8AA9-492307158FAC</sourceTerm>
+                    <targetTerm>87CE5516-5B59-C4F6-8979-491C99F1BB71</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>13E74AA1-BAFA-2B27-528F-4925A2BF5BA7</sourceTerm>
+                    <targetTerm>87CE5516-5B59-C4F6-8979-491C99F1BB71</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>271F252C-DEFF-2263-9631-492776953073</sourceTerm>
+                    <targetTerm>13E74AA1-BAFA-2B27-528F-4925A2BF5BA7</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>D87A4A1A-B111-A33A-E152-492934CFF5B5</sourceTerm>
+                    <targetTerm>13E74AA1-BAFA-2B27-528F-4925A2BF5BA7</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>4583D951-1417-0428-0E94-49334A2BF63B</sourceTerm>
+                    <targetTerm>13E74AA1-BAFA-2B27-528F-4925A2BF5BA7</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>26A9E256-8F2D-EF9B-17BC-4934E1A401A6</sourceTerm>
+                    <targetTerm>87CE5516-5B59-C4F6-8979-491C99F1BB71</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>A912DA78-5883-16BD-8DE1-4936F2154290</sourceTerm>
+                    <targetTerm>DB997C9C-1C8F-0D9B-4D80-48E615F2F29A</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>F8821DEB-2E95-A4CB-01D9-4DC9EDFE6DFF</sourceTerm>
+                    <targetTerm>A912DA78-5883-16BD-8DE1-4936F2154290</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>F5FC3FF7-7BA4-23A1-E2E3-4DCB7980262B</sourceTerm>
+                    <targetTerm>A912DA78-5883-16BD-8DE1-4936F2154290</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>E9D9BFBA-8A50-CA9F-A03C-4DCC62D700E9</sourceTerm>
+                    <targetTerm>A912DA78-5883-16BD-8DE1-4936F2154290</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>80168CA4-A9A3-E8BE-EF36-4DCD43347CFE</sourceTerm>
+                    <targetTerm>A912DA78-5883-16BD-8DE1-4936F2154290</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>69F37C1A-0C2B-CF51-8869-74428D568172</sourceTerm>
+                    <targetTerm>F8821DEB-2E95-A4CB-01D9-4DC9EDFE6DFF</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>CA86A787-C381-68AF-109C-74453EF4F66C</sourceTerm>
+                    <targetTerm>F8821DEB-2E95-A4CB-01D9-4DC9EDFE6DFF</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">is-composed-by</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>D750D9F7-933B-3636-2C1D-7445B48E6F9A</sourceTerm>
+                    <targetTerm>F8821DEB-2E95-A4CB-01D9-4DC9EDFE6DFF</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">is-composed-by</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>6DC2D020-4FB0-0C98-EEA5-7446A3A54EFA</sourceTerm>
+                    <targetTerm>F8821DEB-2E95-A4CB-01D9-4DC9EDFE6DFF</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">is-composed-by</relationshipType>
+                    <metadata/>
+                  </relationship>
+                  <relationship>
+                    <sourceTerm>00D474F8-79DE-94B0-F35C-74497AAB8199</sourceTerm>
+                    <targetTerm>A912DA78-5883-16BD-8DE1-4936F2154290</targetTerm>
+                    <relationshipType source="http://www.grapple.org/relations.xml">is-composed-by</relationshipType>
+                    <metadata/>
+                  </relationship>
+                </vdex>
+              </dm>
+            </body>
+          </model>
+          <model>
+            <header>
+              <modeluuid>FD41FE91-B2DE-C240-C474-74AED613721B</modeluuid>
               <modeltype>dm</modeltype>
               <authoruuid>ed994594-9937-4b4f-9307-f5c2ff07381c</authoruuid>
               <authorname>test1</authorname>
