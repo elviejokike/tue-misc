@@ -1,0 +1,41 @@
+<model>
+  <header>
+    <title>G-Start</title>
+    <description>GRAPPLE Default: Start CRT</description>
+    <creationtime>1286193884782</creationtime>
+    <updatetime>1286529210070</updatetime>
+    <modeluuid>382B63EE-6467-7AC2-404F-77212F3F8BA6</modeluuid>
+    <authoruuid>97fc5b7e-1ce1-4c65-a12a-279d072fc651</authoruuid>
+    <authorisation>readwrite</authorisation>
+    <modeltype>crt</modeltype>
+  </header>
+  <body>
+    <crt>
+      <comment/>
+      <crtdialect>CRT</crtdialect>
+      <parameter name="" type=""/>
+      <visualrepresentation>
+        <colour>#000000</colour>
+        <shape>diamond</shape>
+      </visualrepresentation>
+      <adaptationbehaviour>
+        <code type="gale"><![CDATA[%self% {  start `true`}]]></code>
+        <usermodel/>
+      </adaptationbehaviour>
+      <constraints>
+        <loopsallowed>true</loopsallowed>
+        <attributeconstraints/>
+        <umvariableconstraints/>
+      </constraints>
+      <crtsockets>
+        <socket type="self">
+          <uuid>f67ed906-ab49-604a-ad0e-1238199ba589</uuid>
+          <name>self</name>
+          <mincardinality>1</mincardinality>
+          <maxcardinality>*</maxcardinality>
+        </socket>
+      </crtsockets>
+      <associateddmrelations/>
+    </crt>
+  </body>
+</model>
