@@ -1,0 +1,41 @@
+<model>
+  <header>
+    <title>G-Layout</title>
+    <description>GRAPPLE Default: Layout CRT</description>
+    <creationtime>1284503327942</creationtime>
+    <updatetime>1288453358637</updatetime>
+    <modeluuid>1F0BCF82-0479-0284-937F-125D56177F31</modeluuid>
+    <authoruuid>97fc5b7e-1ce1-4c65-a12a-279d072fc651</authoruuid>
+    <authorisation>readwrite</authorisation>
+    <modeltype>crt</modeltype>
+  </header>
+  <body>
+    <crt>
+      <comment/>
+      <crtdialect>CRT</crtdialect>
+      <parameter name="" type=""/>
+      <visualrepresentation>
+        <colour>#000000</colour>
+        <shape>diamond</shape>
+      </visualrepresentation>
+      <adaptationbehaviour>
+        <code type="gale"><![CDATA[%self% {  #layout:String `<struct cols="250px;*">  <view name="static-tree-view" />  <struct rows="60px;*;40px">    <view name="file-view" file="gale:/tennis-as/header.xhtml" />    <content />   <p><hr />Next suggested concept to study: <view name="next-view" /></p>  </struct></struct>`}]]></code>
+        <usermodel/>
+      </adaptationbehaviour>
+      <constraints>
+        <loopsallowed>false</loopsallowed>
+        <attributeconstraints/>
+        <umvariableconstraints/>
+      </constraints>
+      <crtsockets>
+        <socket type="self">
+          <uuid>05231dc9-b353-d359-57db-125d9835f6e5</uuid>
+          <name>self</name>
+          <mincardinality>*</mincardinality>
+          <maxcardinality>*</maxcardinality>
+        </socket>
+      </crtsockets>
+      <associateddmrelations/>
+    </crt>
+  </body>
+</model>
