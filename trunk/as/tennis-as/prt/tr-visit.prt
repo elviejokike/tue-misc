@@ -1,0 +1,61 @@
+<model>
+  <header>
+    <title>G-Visit</title>
+    <description>GRAPPLE Default visit CRT.Increases the "visited" counter upon access.</description>
+    <creationtime>1287735302479</creationtime>
+    <updatetime>1288179672924</updatetime>
+    <modeluuid>32E3F743-A479-D615-16DA-D3015A19E8FA</modeluuid>
+    <authoruuid>97fc5b7e-1ce1-4c65-a12a-279d072fc651</authoruuid>
+    <authorisation>readwrite</authorisation>
+    <modeltype>crt</modeltype>
+  </header>
+  <body>
+    <crt>
+      <comment/>
+      <crtdialect>CRT</crtdialect>
+      <parameter name="increment" type="integer">1</parameter>
+      <visualrepresentation>
+        <colour>#000000</colour>
+        <shape>diamond</shape>
+      </visualrepresentation>
+      <adaptationbehaviour>
+        <code type="gale"><![CDATA[%self% {  event + `  #{#visited, ${#visited}+%increment%};`}]]></code>
+        <usermodel>
+          <umvariable>
+            <umvarname>visited</umvarname>
+            <socket>self</socket>
+            <public>false</public>
+            <persistent>true</persistent>
+            <location>
+              <web/>
+              <remotecourse>
+                <remotecoursename/>
+                <resource>
+                  <resourceuniqueid/>
+                  <resourcename/>
+                </resource>
+              </remotecourse>
+            </location>
+            <type>integer</type>
+            <range/>
+            <default><![CDATA[0]]></default>
+          </umvariable>
+        </usermodel>
+      </adaptationbehaviour>
+      <constraints>
+        <loopsallowed>false</loopsallowed>
+        <attributeconstraints/>
+        <umvariableconstraints/>
+      </constraints>
+      <crtsockets>
+        <socket type="self">
+          <uuid>acbfe9c9-77ff-4c48-662f-d301e117f7d5</uuid>
+          <name>self</name>
+          <mincardinality>1</mincardinality>
+          <maxcardinality>*</maxcardinality>
+        </socket>
+      </crtsockets>
+      <associateddmrelations/>
+    </crt>
+  </body>
+</model>
