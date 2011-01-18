@@ -1,6 +1,6 @@
 <model>
   <header>
-    <modeluuid>3712E3C3-7E76-8197-2260-995686B02B3A</modeluuid>
+    <modeluuid>73470D33-C596-6B90-E1DD-99569CEB432F</modeluuid>
     <modeltype>dm</modeltype>
     <authoruuid>7a7984a1-5d5f-42a3-b5ae-b3522072ba40</authoruuid>
     <authorname>maarten</authorname>
@@ -2218,6 +2218,74 @@
         <relationship>
           <sourceTerm>6DC2D020-4FB0-0C98-EEA5-7446A3A54EFA</sourceTerm>
           <targetTerm>F8821DEB-2E95-A4CB-01D9-4DC9EDFE6DFF</targetTerm>
+          <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
+          <metadata/>
+        </relationship>
+        <term x="424" y="49">
+          <termIdentifier>9B05F839-C2C2-2380-157A-996AA690C63E</termIdentifier>
+          <caption>
+            <langstring language="x-none">test_overall</langstring>
+          </caption>
+          <description>
+            <langstring language="x-none"/>
+          </description>
+          <metadata>
+            <concept>
+              <lom>
+                <general>
+                  <description>
+                    <langstring>new Description</langstring>
+                  </description>
+                  <catalogentry>
+                    <catalog>type</catalog>
+                    <entry>
+                      <langstring>page</langstring>
+                    </entry>
+                  </catalogentry>
+                </general>
+              </lom>
+            </concept>
+            <concept>
+              <lom>
+                <general>
+                  <description>
+                    <langstring>new Description</langstring>
+                  </description>
+                  <catalogentry>
+                    <catalog>order</catalog>
+                    <entry>
+                      <langstring>500</langstring>
+                    </entry>
+                  </catalogentry>
+                </general>
+              </lom>
+            </concept>
+            <concept>
+              <lom>
+                <general>
+                  <description>
+                    <langstring>new Description</langstring>
+                  </description>
+                  <catalogentry>
+                    <catalog>title</catalog>
+                    <entry>
+                      <langstring>Test Overall</langstring>
+                    </entry>
+                  </catalogentry>
+                </general>
+              </lom>
+            </concept>
+          </metadata>
+          <mediaDescriptor>
+            <mediaLocator>gale:/tennis-as/pages/test_overall.xhtml</mediaLocator>
+            <interpretationNote>
+              <langstring language="x-none">0EE87C24-01A5-1708-3BDB-996BA8CA47A5</langstring>
+            </interpretationNote>
+          </mediaDescriptor>
+        </term>
+        <relationship>
+          <sourceTerm>9B05F839-C2C2-2380-157A-996AA690C63E</sourceTerm>
+          <targetTerm>DB997C9C-1C8F-0D9B-4D80-48E615F2F29A</targetTerm>
           <relationshipType source="http://www.grapple.org/relations.xml">parent</relationshipType>
           <metadata/>
         </relationship>
