@@ -14,8 +14,8 @@
 	</p>
 	</gale:then>
 	</gale:if>
-
-	<gale:test title="Pre-Test for the Tennis Course" total="1" action="#{#knowledge, value};#{#done, true};" expr="true" ask="3" alt="[You are not allowed to repeat this test.]" verbose="true">
+	
+	<gale:test title="Pre-Test for the Tennis Course" total="1" action="#{#knowledge, value};#{#done, true};" expr="true" ask="8" alt="[You are not allowed to repeat this test.]" verbose="true">
 	
 	<p>
 	This is a short test to verify your knowledge about adaptive Tennis.
@@ -31,8 +31,22 @@
 	</gale:question>
 	
 	
+	<gale:question answers="2" right="1">
+		What is a break point?
+		<gale:answer correct="false">Whenever the player who is in the lead in the game needs only one more point to win the game</gale:answer>
+		<gale:answer correct="true">If the receiver, not the server, has a chance to win the game in the next rally</gale:answer>
+	</gale:question>
+	
+	
+	<gale:question answers="3" right="2">
+		The Tennis game structure is described by: 
+		<gale:answer correct="false">A match consist of games, a game consist of sets and a set consist of points.</gale:answer>
+		<gale:answer correct="true">A match consists of sets, a set consist of games and games consist of points.</gale:answer>
+		<gale:answer correct="true">A match consists of 3 or 5 sets.</gale:answer>
+	</gale:question>
+	
 	<gale:question answers="3" right="1">
-	Who is the actual number 1 in the ATP classification?.
+		Who is the actual number 1 in the ATP classification?.
 		<gale:answer correct="false">Roger Federer	</gale:answer>
 		<gale:answer correct="true">Rafael Nadal	</gale:answer>
 		<gale:answer correct="false">Nova Djokovic	</gale:answer>
@@ -44,8 +58,31 @@
 		<p><img src="http://www.celebs101.com/media/2010/7/14/Ana%20Ivanovic.jpg"></img></p>	
 		<gale:answer correct="false">Justine Hennin</gale:answer>
 		<gale:answer correct="true">Ana Ivanovic	</gale:answer>
-		<gale:answer correct="false"> Virginia Slims	</gale:answer>
-		<gale:answer correct="false"> Ana Kurnikova	</gale:answer>
+		<gale:answer correct="false">Virginia Slims	</gale:answer>
+		<gale:answer correct="false">Ana Kurnikova	</gale:answer>
+	</gale:question>
+	
+	<gale:question answers="4" right="1">
+		In which country does the Rolland Garros takes place?
+		<gale:answer correct="false">England</gale:answer>
+		<gale:answer correct="false">United States</gale:answer>
+		<gale:answer correct="true">France</gale:answer>
+		<gale:answer correct="false">Australia</gale:answer>
+	</gale:question>
+	
+	<gale:question answers="4" right="1">
+		The ATP World Tour Finals is played with the top "X" playes in the ATP ranking. How many ?
+		<gale:answer correct="false">6</gale:answer>
+		<gale:answer correct="false">10</gale:answer>
+		<gale:answer correct="true">8</gale:answer>
+		<gale:answer correct="false">12</gale:answer>
+	</gale:question>
+	
+	<gale:question answers="3" right="1">
+		How many Grand Slamps tournaments have won Roger Federer so far?
+		<gale:answer correct="false">14</gale:answer>
+		<gale:answer correct="false">15</gale:answer>
+		<gale:answer correct="true">16</gale:answer>
 	</gale:question>
 	
 	<gale:result>
