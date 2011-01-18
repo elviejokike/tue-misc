@@ -6,7 +6,7 @@
     <authorname>s040457</authorname>
     <authorisation>readwrite</authorisation>
     <creationtime>1294047665435</creationtime>
-    <updatetime>1295332599303</updatetime>
+    <updatetime>1295333557461</updatetime>
     <title>tennis-as</title>
     <description>Tennis - Adaptive introduction course to tennis.</description>
   </header>
@@ -373,6 +373,79 @@ Increases the "visited" counter upon access.</description>
               </crt>
             </body>
           </model>
+          <model>
+            <header>
+              <modeluuid>313022DA-4CB6-A069-D899-7480C308E171</modeluuid>
+              <modeltype>crt</modeltype>
+              <authoruuid>2c9949f3-e00b-46cb-a064-e85a57409166</authoruuid>
+              <authorname>s040457</authorname>
+              <authorisation>readwrite</authorisation>
+              <creationtime>1289384016695</creationtime>
+              <updatetime>1294739751690</updatetime>
+              <title>G-Hide</title>
+              <description>Accessing the source makes the target disappear from the menu.</description>
+              <used>1</used>
+              <selected>0</selected>
+            </header>
+            <body>
+              <crt>
+                <comment/>
+                <crtdialect>CRT</crtdialect>
+                <parameter name="" type=""/>
+                <visualrepresentation>
+                  <colour>#000000</colour>
+                  <shape>diamond</shape>
+                </visualrepresentation>
+                <adaptationbehaviour>
+                  <code type="gale"><![CDATA[%source% {
+  event + `
+  #{%target%#hierarchy, false};`
+}]]></code>
+                  <usermodel>
+                    <umvariable>
+                      <umvarname>hierarchy</umvarname>
+                      <socket>target</socket>
+                      <public>false</public>
+                      <persistent>true</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>boolean</type>
+                      <range/>
+                      <default><![CDATA[true]]></default>
+                    </umvariable>
+                  </usermodel>
+                </adaptationbehaviour>
+                <constraints>
+                  <loopsallowed>false</loopsallowed>
+                  <attributeconstraints/>
+                  <umvariableconstraints/>
+                </constraints>
+                <crtsockets>
+                  <socket type="source">
+                    <uuid>efc2cf56-626a-a364-5409-3546bc3d8d3f</uuid>
+                    <name>source</name>
+                    <mincardinality>1</mincardinality>
+                    <maxcardinality>*</maxcardinality>
+                  </socket>
+                  <socket type="target">
+                    <uuid>905e6e05-d81f-2ddd-fc64-3546bc3d31d7</uuid>
+                    <name>target</name>
+                    <mincardinality>1</mincardinality>
+                    <maxcardinality>*</maxcardinality>
+                  </socket>
+                </crtsockets>
+                <associateddmrelations/>
+              </crt>
+            </body>
+          </model>
         </crtModel>
         <crt type="crt">
           <camCrtUuid>3DA06886-34B9-6591-FEF9-4B4458B58628</camCrtUuid>
@@ -381,7 +454,7 @@ Increases the "visited" counter upon access.</description>
           <colour>0x00FFCC</colour>
           <position>
             <x>109.5</x>
-            <y>116</y>
+            <y>115</y>
           </position>
           <camSocket>
             <uuid>F8B42681-AFB1-2876-EC13-4B4458B5B74A</uuid>
@@ -390,7 +463,7 @@ Increases the "visited" counter upon access.</description>
             <shape>SocketShape</shape>
             <position>
               <x>222.5</x>
-              <y>102</y>
+              <y>101</y>
             </position>
             <entity>
               <dmId>DB997C9C-1C8F-0D9B-4D80-48E615F2F29A</dmId>
@@ -406,7 +479,7 @@ Increases the "visited" counter upon access.</description>
           <parameter name="" type=""/>
           <position>
             <x>135</x>
-            <y>213</y>
+            <y>212</y>
           </position>
           <camSocket>
             <uuid>531FD020-C5FB-F219-5EDF-4B6A2A4DBB5A</uuid>
@@ -415,7 +488,7 @@ Increases the "visited" counter upon access.</description>
             <shape>SocketShape</shape>
             <position>
               <x>306.5</x>
-              <y>220.5</y>
+              <y>219.5</y>
             </position>
             <entity>
               <dmId>80168CA4-A9A3-E8BE-EF36-4DCD43347CFE</dmId>
@@ -510,7 +583,7 @@ Increases the "visited" counter upon access.</description>
           <colour>#000000</colour>
           <position>
             <x>269</x>
-            <y>383</y>
+            <y>382</y>
           </position>
           <camSocket>
             <uuid>05CCA431-B9C4-402E-5D6A-5342E2389155</uuid>
@@ -519,7 +592,7 @@ Increases the "visited" counter upon access.</description>
             <shape>SocketShape</shape>
             <position>
               <x>169</x>
-              <y>383</y>
+              <y>382</y>
             </position>
             <entity>
               <dmId>87CE5516-5B59-C4F6-8979-491C99F1BB71</dmId>
@@ -532,7 +605,7 @@ Increases the "visited" counter upon access.</description>
             <shape>SocketShape</shape>
             <position>
               <x>458</x>
-              <y>390.5</y>
+              <y>389.5</y>
             </position>
             <entity>
               <dmId>4583D951-1417-0428-0E94-49334A2BF63B</dmId>
@@ -556,7 +629,7 @@ Increases the "visited" counter upon access.</description>
           <parameter name="" type=""/>
           <position>
             <x>495</x>
-            <y>144</y>
+            <y>143</y>
           </position>
           <camSocket>
             <uuid>23703E91-66A4-6382-E116-607E2F55C2A9</uuid>
@@ -565,7 +638,7 @@ Increases the "visited" counter upon access.</description>
             <shape>SocketShape</shape>
             <position>
               <x>595</x>
-              <y>144</y>
+              <y>143</y>
             </position>
             <entity>
               <dmId>81E9A4B1-4D31-F963-5367-48E92DD1EA35</dmId>
@@ -580,7 +653,7 @@ Increases the "visited" counter upon access.</description>
           <parameter name="increment" type="integer">1</parameter>
           <position>
             <x>184</x>
-            <y>513</y>
+            <y>512</y>
           </position>
           <camSocket>
             <uuid>96EF2921-77CC-CD3E-C66E-97D5CBCCA115</uuid>
@@ -589,7 +662,7 @@ Increases the "visited" counter upon access.</description>
             <shape>SocketShape</shape>
             <position>
               <x>366.5</x>
-              <y>520.5</y>
+              <y>519.5</y>
             </position>
             <entity>
               <dmId>00D474F8-79DE-94B0-F35C-74497AAB8199</dmId>
@@ -689,6 +762,133 @@ Increases the "visited" counter upon access.</description>
             </entity>
             <entity>
               <dmId>DB997C9C-1C8F-0D9B-4D80-48E615F2F29A</dmId>
+            </entity>
+          </camSocket>
+        </crt>
+        <crt type="crt">
+          <camCrtUuid>45D72220-0194-EAF3-79FF-97E15F65A366</camCrtUuid>
+          <uuid>313022DA-4CB6-A069-D899-7480C308E171</uuid>
+          <shape>diamond</shape>
+          <colour>#000000</colour>
+          <parameter name="" type=""/>
+          <position>
+            <x>837</x>
+            <y>504.5</y>
+          </position>
+          <camSocket>
+            <uuid>740D0AAA-CF89-058A-CE6D-97E15F650CA7</uuid>
+            <socketid>efc2cf56-626a-a364-5409-3546bc3d8d3f</socketid>
+            <colour>0</colour>
+            <shape>SocketShape</shape>
+            <position>
+              <x>726.5</x>
+              <y>517.5</y>
+            </position>
+            <entity>
+              <dmId>00D474F8-79DE-94B0-F35C-74497AAB8199</dmId>
+            </entity>
+            <entity>
+              <dmId>6DC2D020-4FB0-0C98-EEA5-7446A3A54EFA</dmId>
+            </entity>
+            <entity>
+              <dmId>D750D9F7-933B-3636-2C1D-7445B48E6F9A</dmId>
+            </entity>
+            <entity>
+              <dmId>CA86A787-C381-68AF-109C-74453EF4F66C</dmId>
+            </entity>
+            <entity>
+              <dmId>69F37C1A-0C2B-CF51-8869-74428D568172</dmId>
+            </entity>
+            <entity>
+              <dmId>80168CA4-A9A3-E8BE-EF36-4DCD43347CFE</dmId>
+            </entity>
+            <entity>
+              <dmId>E9D9BFBA-8A50-CA9F-A03C-4DCC62D700E9</dmId>
+            </entity>
+            <entity>
+              <dmId>F5FC3FF7-7BA4-23A1-E2E3-4DCB7980262B</dmId>
+            </entity>
+            <entity>
+              <dmId>F8821DEB-2E95-A4CB-01D9-4DC9EDFE6DFF</dmId>
+            </entity>
+            <entity>
+              <dmId>A912DA78-5883-16BD-8DE1-4936F2154290</dmId>
+            </entity>
+            <entity>
+              <dmId>26A9E256-8F2D-EF9B-17BC-4934E1A401A6</dmId>
+            </entity>
+            <entity>
+              <dmId>4583D951-1417-0428-0E94-49334A2BF63B</dmId>
+            </entity>
+            <entity>
+              <dmId>D87A4A1A-B111-A33A-E152-492934CFF5B5</dmId>
+            </entity>
+            <entity>
+              <dmId>271F252C-DEFF-2263-9631-492776953073</dmId>
+            </entity>
+            <entity>
+              <dmId>13E74AA1-BAFA-2B27-528F-4925A2BF5BA7</dmId>
+            </entity>
+            <entity>
+              <dmId>2E4FA1A2-202B-8194-8AA9-492307158FAC</dmId>
+            </entity>
+            <entity>
+              <dmId>68A17711-718A-74D9-4988-49216FDB8F77</dmId>
+            </entity>
+            <entity>
+              <dmId>05AEEA86-B297-25B6-5A86-491E3C660A5F</dmId>
+            </entity>
+            <entity>
+              <dmId>87CE5516-5B59-C4F6-8979-491C99F1BB71</dmId>
+            </entity>
+            <entity>
+              <dmId>D8AC23F0-1B53-2190-8127-491AB9B72B54</dmId>
+            </entity>
+            <entity>
+              <dmId>AB7FC69C-359F-4F10-FD36-49139067AE55</dmId>
+            </entity>
+            <entity>
+              <dmId>FB77811D-38B5-E91A-29B7-4910A0153FC9</dmId>
+            </entity>
+            <entity>
+              <dmId>20FC4E2F-F595-C1BE-8987-490E0566CF9E</dmId>
+            </entity>
+            <entity>
+              <dmId>2E6A61AE-6924-D236-B4E5-490C6A05E47B</dmId>
+            </entity>
+            <entity>
+              <dmId>BD6AAEFA-03D9-0825-751B-490A6D89A425</dmId>
+            </entity>
+            <entity>
+              <dmId>049E5BED-3F62-4E64-9779-4908EB0003D3</dmId>
+            </entity>
+            <entity>
+              <dmId>A21B7498-FBC0-EFD0-DE8B-4907118D3FB3</dmId>
+            </entity>
+            <entity>
+              <dmId>BD38A72B-8D36-2BFC-0018-4904A6B79F8C</dmId>
+            </entity>
+            <entity>
+              <dmId>95C5A81B-410A-7014-CAC7-49030F10CC4E</dmId>
+            </entity>
+            <entity>
+              <dmId>2BD78979-6285-6B27-A243-49012810B4FA</dmId>
+            </entity>
+            <entity>
+              <dmId>1B0BBC91-14A6-E71F-8521-48F804D41B0B</dmId>
+            </entity>
+          </camSocket>
+          <camSocket>
+            <uuid>4EFCF555-C797-6F29-D661-97E15F66532E</uuid>
+            <socketid>905e6e05-d81f-2ddd-fc64-3546bc3d31d7</socketid>
+            <colour>0</colour>
+            <shape>SocketShape</shape>
+            <position>
+              <x>938</x>
+              <y>497.5</y>
+            </position>
+            <entity>
+              <dmId>81E9A4B1-4D31-F963-5367-48E92DD1EA35</dmId>
             </entity>
           </camSocket>
         </crt>
