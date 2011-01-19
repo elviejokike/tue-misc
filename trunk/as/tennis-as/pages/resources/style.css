@@ -28,6 +28,7 @@ h1, h2, h3 {
 
 h1 {
 	font-size: 2em;
+	color: #E5A815;
 }
 
 h2 {
@@ -36,6 +37,7 @@ h2 {
 
 h3 {
 	font-size: 1.6em;
+	color: #E5A815;
 }
 
 p, ul, ol {
