@@ -2,6 +2,26 @@
 <xhtml:span xmlns="http://gale.tue.nl/adaptation"
 	xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	<variable name="gale://gale.tue.nl/personal#name" />
+	
+<script type="text/javascript">
+function loadjscssfile(filename, filetype){
+ if (filetype=="js"){ //if filename is a external JavaScript file
+  var fileref=document.createElement('script')
+  fileref.setAttribute("type","text/javascript")
+  fileref.setAttribute("src", filename)
+ }
+ else if (filetype=="css"){ //if filename is an external CSS file
+  var fileref=document.createElement("link")
+  fileref.setAttribute("rel", "stylesheet")
+  fileref.setAttribute("type", "text/css")
+  fileref.setAttribute("href", filename)
+ }
+ if (typeof fileref!="undefined")
+  document.getElementsByTagName("head")[0].appendChild(fileref)
+}	
+loadjscssfile("/gale/concept/gale://gale.tue.nl/cam/tennis-as/TENNIS/$%7Bhome%7D/tennis-as/pages/resources/style.css", "css")
+</script>
+	
 (<variable name="gale://gale.tue.nl/personal#email" />)
 has read
 <count method="done" uri="gale://gale.tue.nl/cam/tennis-as" />
