@@ -8,11 +8,6 @@ body {
 	color: #FFFFFF;
 }
 
-img{
-	border: 5px solid rgb(128,128,0);
-	padding: 5px; /*Inner border size*/
-	background: #fff; /*Inner border color*/
-}
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
