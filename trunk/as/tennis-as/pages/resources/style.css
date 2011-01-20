@@ -161,7 +161,7 @@ a:hover {
 /* Menu */
 
 #menu {
-	width: 280px;
+	width: 680px;
 	margin: 20px auto 20px auto;
 	padding: 0;
 }
@@ -179,7 +179,7 @@ a:hover {
 
 #menu a {
 	display: block;
-	width: 260px;
+	width: 660px;
 	height: 27px;
 	margin: 4px 0px;
 	padding: 8px 0px 0px 20px;
