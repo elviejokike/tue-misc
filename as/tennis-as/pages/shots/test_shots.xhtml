@@ -8,6 +8,87 @@
 </head>
 <body>
 
+<gale:if expr="${#done}"><gale:then>
+	<h1>Shots Test Result</h1>
+	<p>
+	Your test score was <gale:variable expr="${#knowledge}.intValue()" />.
+	</p>
+	</gale:then>
+	</gale:if>
+	
+	<gale:test title="Shots Test for the Tennis Course" total="1" action="#{#knowledge, value};#{#done, true};" expr="true" ask="8" alt="[You are not allowed to repeat this test.]" verbose="true">
+	
+	<p>
+	This is a short test to verify your knowledge about the shots in tennis.
+	</p>
+	
+	<gale:question answers="2" right="1">
+	<p>True or False: An ace can only be achieved during the service of the player.</p>
+		<p><gale:answer correct="true">True	</gale:answer></p>
+		<p><gale:answer correct="false">False	</gale:answer></p>
+	</gale:question>
+	
+	
+	<gale:question answers="2" right="1">
+	<p>True or False: Most tennis players have a better forehand than a backhand.</p>
+		<p><gale:answer correct="true">True</gale:answer></p>
+		<p><gale:answer correct="false">False</gale:answer></p>
+	</gale:question>
+	
+	
+	<gale:question answers="2" right="1">
+	<p>True or False: Backspin and topspin do not influence the trajectory of the ball. </p>
+		<p><gale:answer correct="false">True</gale:answer></p>
+		<p><gale:answer correct="true">False</gale:answer></p>
+	</gale:question>
+	
+	<gale:question answers="3" right="1">
+		<p>Who is the actual number 1 in the ATP classification?.</p>
+		<p><gale:answer correct="false">Roger Federer	</gale:answer></p>
+		<p><gale:answer correct="true">Rafael Nadal	</gale:answer></p>
+		<p><gale:answer correct="false">Nova Djokovic	</gale:answer></p>
+	</gale:question>
+	
+	
+	<gale:question answers="4" right="1">
+		Who is this girl?.
+		<p><img src="http://www.celebs101.com/media/2010/7/14/Ana%20Ivanovic.jpg"></img></p>	
+		<gale:answer correct="false">Justine Hennin</gale:answer>
+		<gale:answer correct="true">Ana Ivanovic	</gale:answer>
+		<gale:answer correct="false">Virginia Slims	</gale:answer>
+		<gale:answer correct="false">Ana Kurnikova	</gale:answer>
+	</gale:question>
+	
+	<gale:question answers="4" right="1">
+		In which country does the Rolland Garros takes place?
+		<gale:answer correct="false">England</gale:answer>
+		<gale:answer correct="false">United States</gale:answer>
+		<gale:answer correct="true">France</gale:answer>
+		<gale:answer correct="false">Australia</gale:answer>
+	</gale:question>
+	
+	<gale:question answers="4" right="1">
+		The ATP World Tour Finals is played with the top "X" playes in the ATP ranking. How many ?
+		<gale:answer correct="false">6</gale:answer>
+		<gale:answer correct="false">10</gale:answer>
+		<gale:answer correct="true">8</gale:answer>
+		<gale:answer correct="false">12</gale:answer>
+	</gale:question>
+	
+	<gale:question answers="3" right="1">
+		How many Grand Slamps tournaments have won Roger Federer so far?
+		<gale:answer correct="false">14</gale:answer>
+		<gale:answer correct="false">15</gale:answer>
+		<gale:answer correct="true">16</gale:answer>
+	</gale:question>
+	
+	<gale:result>
+	Your score was <gale:variable expr="${#knowledge}.intValue()" />. 
+	</gale:result>
+	
+	</gale:test>
+
+
 
 <ul>
 <li>
@@ -26,3 +107,4 @@
 
 
 </body>
+</html>
