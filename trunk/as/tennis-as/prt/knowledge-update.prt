@@ -1,0 +1,119 @@
+<model>
+  <header>
+    <title>G-Knowledge-Update</title>
+    <description>GRAPPLE Default: Knowledge Update CRT</description>
+    <creationtime>1284502213193</creationtime>
+    <updatetime>1289809159669</updatetime>
+    <modeluuid>FF78DE75-B152-2F3D-DAB2-124C537D20A3</modeluuid>
+    <authoruuid>97fc5b7e-1ce1-4c65-a12a-279d072fc651</authoruuid>
+    <authorisation>readwrite</authorisation>
+    <modeltype>crt</modeltype>
+  </header>
+  <body>
+    <crt>
+      <comment/>
+      <crtdialect>CRT</crtdialect>
+      <parameter name="level" type="float">35</parameter>
+      <visualrepresentation>
+        <colour>#000000</colour>
+        <shape>diamond</shape>
+      </visualrepresentation>
+      <adaptationbehaviour>
+        <code type="gale"><![CDATA[%self% {
+  event + `
+if (${#suitability}) {
+  #{#visited, ${#visited}+1};
+  #{#own_knowledge, 100};
+}
+if (!${#suitability} && ${#own_knowledge} < %level%)
+  #{#own_knowledge, %level%};
+`
+
+  #own_knowledge {event + `
+#{#knowledge, ${#knowledge}+changed.diff/(${<-(parent)}.length+1)};
+`}
+
+}]]></code>
+        <usermodel>
+          <umvariable>
+            <umvarname>knowledge</umvarname>
+            <socket>self</socket>
+            <public>false</public>
+            <persistent>true</persistent>
+            <location>
+              <web/>
+              <remotecourse>
+                <remotecoursename/>
+                <resource>
+                  <resourceuniqueid/>
+                  <resourcename/>
+                </resource>
+              </remotecourse>
+            </location>
+            <type>float</type>
+            <range>
+              <from>0</from>
+              <to>100</to>
+            </range>
+            <default><![CDATA[0]]></default>
+          </umvariable>
+          <umvariable>
+            <umvarname>own_knowledge</umvarname>
+            <socket>self</socket>
+            <public>false</public>
+            <persistent>true</persistent>
+            <location>
+              <web/>
+              <remotecourse>
+                <remotecoursename/>
+                <resource>
+                  <resourceuniqueid/>
+                  <resourcename/>
+                </resource>
+              </remotecourse>
+            </location>
+            <type>float</type>
+            <range>
+              <from>0</from>
+              <to>100</to>
+            </range>
+            <default><![CDATA[0]]></default>
+          </umvariable>
+          <umvariable>
+            <umvarname>visited</umvarname>
+            <socket>self</socket>
+            <public>false</public>
+            <persistent>true</persistent>
+            <location>
+              <web/>
+              <remotecourse>
+                <remotecoursename/>
+                <resource>
+                  <resourceuniqueid/>
+                  <resourcename/>
+                </resource>
+              </remotecourse>
+            </location>
+            <type>integer</type>
+            <range/>
+            <default><![CDATA[0]]></default>
+          </umvariable>
+        </usermodel>
+      </adaptationbehaviour>
+      <constraints>
+        <loopsallowed>false</loopsallowed>
+        <attributeconstraints/>
+        <umvariableconstraints/>
+      </constraints>
+      <crtsockets>
+        <socket type="self">
+          <uuid>e44eb8bd-ed64-8122-b9b7-1251f34cd392</uuid>
+          <name>self</name>
+          <mincardinality>1</mincardinality>
+          <maxcardinality>*</maxcardinality>
+        </socket>
+      </crtsockets>
+      <associateddmrelations/>
+    </crt>
+  </body>
+</model>
