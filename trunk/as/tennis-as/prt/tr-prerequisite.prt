@@ -1,0 +1,89 @@
+<model>
+  <header>
+    <title>G-Prerequisite</title>
+    <description>test</description>
+    <creationtime>1284501229943</creationtime>
+    <updatetime>1289811218379</updatetime>
+    <modeluuid>725B48CF-26BA-34A7-AA46-123D5293D3EA</modeluuid>
+    <authoruuid>97fc5b7e-1ce1-4c65-a12a-279d072fc651</authoruuid>
+    <authorisation>readwrite</authorisation>
+    <modeltype>crt</modeltype>
+  </header>
+  <body>
+    <crt>
+      <comment/>
+      <crtdialect>CRT</crtdialect>
+      <parameter name="level" type="float">70</parameter>
+      <visualrepresentation>
+        <colour>#000000</colour>
+        <shape>diamond</shape>
+      </visualrepresentation>
+      <adaptationbehaviour>
+        <code type="gale"><![CDATA[%target% {#suitability & !`(${%source%#knowledge}>%level%)`}]]></code>
+        <usermodel>
+          <umvariable>
+            <umvarname>suitability</umvarname>
+            <socket>target</socket>
+            <public>false</public>
+            <persistent>false</persistent>
+            <location>
+              <web/>
+              <remotecourse>
+                <remotecoursename/>
+                <resource>
+                  <resourceuniqueid/>
+                  <resourcename/>
+                </resource>
+              </remotecourse>
+            </location>
+            <type>boolean</type>
+            <range/>
+            <default><![CDATA[true]]></default>
+          </umvariable>
+          <umvariable>
+            <umvarname>knowledge</umvarname>
+            <socket>source</socket>
+            <public>false</public>
+            <persistent>true</persistent>
+            <location>
+              <web/>
+              <remotecourse>
+                <remotecoursename/>
+                <resource>
+                  <resourceuniqueid/>
+                  <resourcename/>
+                </resource>
+              </remotecourse>
+            </location>
+            <type>float</type>
+            <range>
+              <from>0</from>
+              <to>100</to>
+            </range>
+            <default><![CDATA[0]]></default>
+          </umvariable>
+        </usermodel>
+      </adaptationbehaviour>
+      <constraints>
+        <loopsallowed>false</loopsallowed>
+        <attributeconstraints/>
+        <umvariableconstraints/>
+      </constraints>
+      <crtsockets>
+        <socket type="source">
+          <uuid>ac7024e6-6171-a051-648a-123d5293f4ad</uuid>
+          <name>source</name>
+          <mincardinality>1</mincardinality>
+          <maxcardinality>*</maxcardinality>
+        </socket>
+        <socket type="target">
+          <uuid>373727e1-82b0-8a6b-5b09-123d529304dd</uuid>
+          <name>target</name>
+          <mincardinality>1</mincardinality>
+          <maxcardinality>*</maxcardinality>
+        </socket>
+      </crtsockets>
+      <associateddmrelations/>
+    </crt>
+  </body>
+</model>
