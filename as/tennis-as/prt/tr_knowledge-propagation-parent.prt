@@ -1,0 +1,63 @@
+<model>
+  <header>
+    <title>G-Knowledge-Propagation-Parent</title>
+    <description>This propagates knowledge updates to the parent concept.</description>
+    <creationtime>1289808926864</creationtime>
+    <updatetime>1289809277627</updatetime>
+    <modeluuid>F3B24AC1-B322-64DC-1373-4E9A5984B1C3</modeluuid>
+    <authoruuid>97fc5b7e-1ce1-4c65-a12a-279d072fc651</authoruuid>
+    <authorisation>readwrite</authorisation>
+    <modeltype>crt</modeltype>
+  </header>
+  <body>
+    <crt>
+      <comment>This PRT arranges for knowledge changes to be propagated upwards in the concept hierarchy. Knowledge is propagated to the parent, and this update triggers the PRT update for that parent.The basic idea is for this PRT to be automatically applied to the domain relation "parent" but alas this does not work yet, so all concepts need to be placed in the socket manually.This is a "convenience" PRT: knowledge can also be propagated using the "G-Knowledge-Propagation" PRT but this is a binary PRT that requires the creation of many instance whereas the G-knowledge-Propagation-Parent PRT does the propagation automatically for all parent relationships by inserting concepts into the socket of a single instance.</comment>
+      <crtdialect>CRT</crtdialect>
+      <parameter name="" type=""/>
+      <visualrepresentation>
+        <colour>#000000</colour>
+        <shape>diamond</shape>
+      </visualrepresentation>
+      <adaptationbehaviour>
+        <code type="gale"><![CDATA[%self% {  #knowledge {event + `if (${->(parent)}.length > 0)  #{->(parent)#knowledge, ${->(parent)#knowledge}+changed.diff/(${->(parent)<-(parent)}.length+1)};`}}]]></code>
+        <usermodel>
+          <umvariable>
+            <umvarname>knowledge</umvarname>
+            <socket>self</socket>
+            <public>false</public>
+            <persistent>true</persistent>
+            <location>
+              <web/>
+              <remotecourse>
+                <remotecoursename/>
+                <resource>
+                  <resourceuniqueid/>
+                  <resourcename/>
+                </resource>
+              </remotecourse>
+            </location>
+            <type>float</type>
+            <range/>
+            <default><![CDATA[0]]></default>
+          </umvariable>
+        </usermodel>
+      </adaptationbehaviour>
+      <constraints>
+        <loopsallowed>false</loopsallowed>
+        <attributeconstraints/>
+        <umvariableconstraints/>
+      </constraints>
+      <crtsockets>
+        <socket type="self">
+          <uuid>b69dad2e-66a5-23b7-e9ee-4e9a82b6e2a2</uuid>
+          <name>self</name>
+          <mincardinality>*</mincardinality>
+          <maxcardinality>*</maxcardinality>
+        </socket>
+      </crtsockets>
+      <associateddmrelations>
+        <relationshiptype>parent</relationshiptype>
+      </associateddmrelations>
+    </crt>
+  </body>
+</model>
