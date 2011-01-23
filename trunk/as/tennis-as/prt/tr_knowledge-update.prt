@@ -21,11 +21,7 @@
       <adaptationbehaviour>
         <code type="gale"><![CDATA[%self% {
   event + `
-if (${#suitability}) {
-  #{#visited, ${#visited}+1};
-  #{#own_knowledge, 100};
-}
-if (!${#suitability} && ${#own_knowledge} < %level%)
+if (${#own_knowledge} < %level%)
   #{#own_knowledge, %level%};
 `
 
