@@ -20,6 +20,11 @@ img{
 	padding: 5px; /*Inner border size*/
 	background: #fff; /*Inner border color*/
 }
+
+span h1 {
+	font-size: 12px;
+}
+
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
