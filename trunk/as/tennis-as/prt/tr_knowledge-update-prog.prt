@@ -1,10 +1,10 @@
 <model>
   <header>
-    <title>G-Knowledge-Update-Quiz</title>
-    <description>Knowledge Update and Quiz</description>
+    <title>G-Knowledge-Update-Progressive</title>
+    <description>Knowledge Update Progressive CRT</description>
     <creationtime>1284502213193</creationtime>
     <updatetime>1289809159669</updatetime>
-    <modeluuid>FF78DE75-B152-2F3D-DAB2-124C537D20A3</modeluuid>
+    <modeluuid>FF78DE75-B152-2F3D-DAB2-124C537D20A4</modeluuid>
     <authoruuid>97fc5b7e-1ce1-4c65-a12a-279d072fc651</authoruuid>
     <authorisation>readwrite</authorisation>
     <modeltype>crt</modeltype>
@@ -21,12 +21,10 @@
       <adaptationbehaviour>
         <code type="gale"><![CDATA[%self% {
   event + `
-if (${#own_knowledge} < %level%)
+if (${#suitability})
+  #{#own_knowledge, 100};
+else if (${#own_knowledge} < %level%)
   #{#own_knowledge, %level%};
-else if (${#suitability} && ${#own_knowledge} < 65)
-  #{#own_knowledge, ${#visited}*5 - 5 + %level%};  
-else if (!${#suitability} && ${#own_knowledge} < 65)
-  #{#own_knowledge, ${#visited}*3 - 3 + %level%}; 
 `
 
   #own_knowledge {event + `
