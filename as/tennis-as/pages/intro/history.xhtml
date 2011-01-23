@@ -6,8 +6,21 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" href="../resources/style.css" type="text/css" />
 <title></title>
+<script type="text/javascript"> 
+function toggleDivOL( elemID )
+{
+	var elem = document.getElementById( elemID );
+	if( elem.style.display =='none' || elem.style.display =='')
+	{
+		elem.style.display = "inherit";
+	}
+	else
+	{
+		elem.style.display="none";
+	}
+}
+</script>
 </head>
-
 <body>
 <h1>History</h1>
 
@@ -84,11 +97,9 @@ is about 130 years old.</p>
 
 
 
-
-
-<gale:if expr="${gale://gale.tue.nl/cam/tennis-as/wimbledon#visited}>0">
-<gale:then>
-<h3>Wimbledon</h3>
+<div class="subcontent">
+<div class="title"><gale:a href="wimbledon">Wimbledon</gale:a> <a class="neutral" href="javascript:toggleDivOL('history_1');">History</a></div>
+<div id="history_1" ><gale:attr-variable name="class" expr="${gale://gale.tue.nl/cam/tennis-as/wimbledon#visited}>0"/>
 
 <p>In 1877, the All England Club held the first <gale:a href="wimbledon">Wimbledon</gale:a>
 tournament, and its tournament committee came up with a rectangular
@@ -136,9 +147,8 @@ its leadership into the 21st century. To that end a long-term plan was
 unveiled in 1993, intended to improve the quality of the event for
 spectators, players, officials and neighbours.</p>
 
-</gale:then>
-</gale:if>
-
+</div>
+</div>
 
 
 <gale:if expr="${gale://gale.tue.nl/cam/tennis-as/aus_open#visited}>0">
