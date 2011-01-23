@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:gale="http://gale.tue.nl/adaptation">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title></title>
+</head>
+<body>
+
+	<p>
+	Your test score was <gale:variable expr="${#knowledgeHistory}.intValue()" />.
+	</p>
+	
+	<gale:test title="Intro-Test" total="1" action="#{#knowledgeHistory,value};#{#done, true};" expr="true" ask="3" alt="[You are not allowed to repeat this test.]" verbose="true">
+	
+	<p>
+	This is a short intro-test to verify your knowledge about tennis
+	</p>
+	
+	
+	<gale:question answers="2" right="1">
+	Who did patent in London the equipment and rules for a game very similar to modern tennis
+		<gale:answer correct="true">Walter C. Wingfield	</gale:answer>
+		<gale:answer correct="false">Charles Goodyearlse	</gale:answer>
+	</gale:question>
+	
+	
+	<gale:question answers="2" right="1">
+		In Wimbledon, The only event held in 1877 was:
+		<gale:answer correct="false">Men doubles</gale:answer>
+		<gale:answer correct="true">Men singles</gale:answer>
+	</gale:question>
+	
+	
+	<gale:question answers="3" right="2">
+		The tennis ball is approximately:
+		<gale:answer correct="false">8.4 cm</gale:answer>
+		<gale:answer correct="true">2.7 in.</gale:answer>
+		<gale:answer correct="true">6.7 cm</gale:answer>
+	</gale:question>
+	
+	
+	
+	<gale:result>
+	Your score was <gale:variable expr="${#knowledgeHistory}.intValue()" />. 
+	</gale:result>
+	
+	</gale:test>
+
+<p>
+	s: <gale:variable expr="${#suitability}" />.
+	v: <gale:variable expr="${#visited}" />.
+	k: <gale:variable expr="${#knowledge}" />.
+</p>
+</body>
+</html>
