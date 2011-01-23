@@ -19,7 +19,11 @@
         <shape>diamond</shape>
       </visualrepresentation>
       <adaptationbehaviour>
-        <code type="gale"><![CDATA[%self% {  #knowledgeHistory:Float {     public `true`     authorative `true`  } #knowledgeShots:Float {     public `true`     authorative `true`  } #knowledgeGame:Float {     public `true`     authorative `true`  } #knowledgeTournaments:Float {     public `true`     authorative `true`  }}]]></code>
+        <code type="gale"><![CDATA[%self% {  #knowledge:Float {     public `true`     authorative `true`  },
+  #knowledgeHistory:Float {
+     public `true`
+     authorative `true`
+  }   #knowledgeShots:Float {     public `true`     authorative `true`  } #knowledgeGame:Float {     public `true`     authorative `true`  } #knowledgeTournaments:Float {     public `true`     authorative `true`  }}]]></code>
         <usermodel>
           <umvariable>
             <umvarname>knowledgeHistory</umvarname>
