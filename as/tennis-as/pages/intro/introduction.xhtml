@@ -40,11 +40,20 @@ referred to as the "Majors"): the Australian Open played on hard courts,
 the French Open played on red clay courts, Wimbledon played on grass
 courts, and the US Open played also on hard courts.</p>
 
+<gale:test title="Let's Check it" total="1" action="#{#own_knowledge, value};" expr="100>${#own_knowledge}.intValue()" ask="1" alt="" verbose="true">
+	<gale:question answers="2" right="1">
+	The modern game of tennis originated in France
+		<gale:answer correct="true">False	</gale:answer>
+		<gale:answer correct="false">True	</gale:answer>
+	</gale:question>
+	
+</gale:test>
 
 <p>
 	s: <gale:variable expr="${#suitability}" />.
 	v: <gale:variable expr="${#visited}" />.
 	k: <gale:variable expr="${#knowledge}" />.
+	ok: <gale:variable expr="${#own_knowledge}" />.
 </p>
 
 </body>
