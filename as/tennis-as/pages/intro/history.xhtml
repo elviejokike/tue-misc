@@ -150,10 +150,9 @@ spectators, players, officials and neighbours.</p>
 </div>
 </div>
 
-
-<gale:if expr="${gale://gale.tue.nl/cam/tennis-as/aus_open#visited}>0">
-<gale:then>
-<h3>Australian Open</h3>
+<div class="subcontent">
+<div class="title"><gale:a href="aus_open">Australian Open</gale:a> <a class="neutral" href="javascript:toggleDivOL('history_2');">History</a></div>
+<div id="history_2" ><gale:attr-variable name="class" expr="${gale://gale.tue.nl/cam/tennis-as/aus_open#visited}>0"/>
 <p>The <gale:a href="aus_open">Australian Open</gale:a> is managed by Tennis Australia, formerly
 the Lawn Tennis Association of Australia (LTAA), and was first played
 at the Warehouseman's Cricket Ground in Melbourne in 1905. This
@@ -171,9 +170,24 @@ Though started in 1905, the tournament was not designated as being a
 major championship until 1924, by the International Lawn Tennis
 Federation (ILTF) in a 1923 meeting. The tournament committee changed
 the structure of the tournament to include seeding at that time.</p>
-	</gale:then>
-</gale:if>
 
+
+</div>
+</div>
+
+<br/>
+<br/>
+
+
+<gale:test title="Let's Check it" total="1" action="#{#own_knowledge, value};" expr="100>${#own_knowledge}.intValue()" ask="1" alt="" verbose="true">
+	<gale:question answers="3" right="1">
+	The first Australian Open was played in:
+		<gale:answer correct="false">Albert Reserve Tennis Centre	</gale:answer>
+		<gale:answer correct="true">Warehouseman's Cricket Ground	</gale:answer>
+		<gale:answer correct="false">Christchurch	</gale:answer>
+	</gale:question>
+	
+</gale:test>
 
 <p>
 	s: <gale:variable expr="${#suitability}" />.
