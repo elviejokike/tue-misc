@@ -55,13 +55,21 @@ a {
 	color: #E5A815;
 }
 
-a:hover {
-}
 
 #wrapper {
 	margin: 0 auto;
 	padding: 0;
 }
+
+/** Contnt **/
+div.subcontent div.true {
+	display: inherit;
+}
+
+div.subcontent div.false {
+	display: none;
+}
+
 
 /* Header */
 
