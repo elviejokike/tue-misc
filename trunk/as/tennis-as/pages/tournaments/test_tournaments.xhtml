@@ -9,31 +9,49 @@
 </head>
 
 <body>
-<h1>Grand Slams</h1>
-
-<p>
-</p>
-
-<ul>
-<li>
-<gale:a href="winbledon">Wimbledon</gale:a>
-</li>
-<li>
-<gale:a href="roland">Roland Garros</gale:a>
-</li>
-<li>
-<gale:a href="ausopen">Australian Open</gale:a>
-</li>
-<li>
-<gale:a href="usopen">US Open</gale:a>
-</li>
-</ul>
-
-<p>
-	s: <gale:variable expr="${#suitability}" />.
-	v: <gale:variable expr="${#visited}" />.
-	k: <gale:variable expr="${#knowledge}" />.
-</p>
+	<gale:if expr="true"><gale:then>
+	<h1>Tournaments Test Result</h1>
+	<p>
+	Your test score was <gale:variable expr="${#knowledgeTournaments}.intValue()" />.
+	</p>
+	</gale:then>
+	</gale:if>
+	
+	<gale:test title="Tournaments-Test" total="1" action="#{#knowledgeTournaments,value};#{#done, true};" expr="true" ask="3" alt="[You are not allowed to repeat this test.]" verbose="true">
+	
+	<p>
+	This is a short test to verify your knowledge about Tournaments in tennis
+	</p>
+	
+	
+	<gale:question answers="2" right="1">
+		Is the Roland Garros the only Grand Slam still held on clay?
+		<gale:answer correct="true">True	</gale:answer>
+		<gale:answer correct="false">False	</gale:answer>
+	</gale:question>
+	
+	
+	<gale:question answers="2" right="1">
+		250 and 500 Series includes 40 tournaments
+		<gale:answer correct="true">True</gale:answer>
+		<gale:answer correct="false">False</gale:answer>
+	</gale:question>
+	
+	
+	<gale:question answers="3" right="1">
+		A "Golden Slam" is:
+		<gale:answer correct="false">A tournament out of the four big ones.</gale:answer>
+		<gale:answer correct="false">A singles player or doubles team that wins all four Major tournaments consecutively</gale:answer>
+		<gale:answer correct="true">Winning the four Majors and a gold medal in tennis at the Summer Olympics </gale:answer>
+	</gale:question>
+	
+	
+	
+	<gale:result>
+	Your score was <gale:variable expr="${#knowledgeTournaments}.intValue()" />. 
+	</gale:result>
+	
+	</gale:test>	
 
 </body>
 </html>
