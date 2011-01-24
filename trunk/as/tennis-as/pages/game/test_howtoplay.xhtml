@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:gale="http://gale.tue.nl/adaptation">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="../resources/style.css" type="text/css" />
+  <title></title>
+</head>
+<body>
+	<gale:if expr="true"><gale:then>
+	<h1>Game-Test Result</h1>
+	<p>
+	Your current score for this topic is <gale:variable expr="${#knowledgeGame}.intValue()" />.
+	</p>
+	</gale:then>
+	</gale:if>
+	
+	
+	<gale:test title="Intro-Test" total="1" action="#{#knowledgeGame,value};#{#done, true};" expr="true" ask="3" alt="[You are not allowed to repeat this test.]" verbose="true">
+	
+	<p>
+	This is a short game-test to verify your knowledge about tennis
+	</p>
+	
+	
+	<gale:question answers="3" right="1">
+	How many types of courts do you have
+		<gale:answer correct="true">4	</gale:answer>
+		<gale:answer correct="false">3	</gale:answer>
+		<gale:answer correct="false">5	</gale:answer>
+	</gale:question>
+	
+	
+	<gale:question answers="2" right="1">
+		A tennis match is determined through the best of 3 or 5 sets.
+		<gale:answer correct="false">false</gale:answer>
+		<gale:answer correct="true">true</gale:answer>
+	</gale:question>
+	
+	
+	<gale:question answers="2" right="1">
+		The lines that delineate the width of the court are called the baseline
+		<gale:answer correct="false">false</gale:answer>
+		<gale:answer correct="true">true</gale:answer>
+	</gale:question>
+	
+	
+	
+	<gale:result>
+	Your score was <gale:variable expr="${#knowledgeGame}.intValue()" />. 
+	</gale:result>
+	
+	</gale:test>
+
+<p>
+	s: <gale:variable expr="${#suitability}" />.
+	v: <gale:variable expr="${#visited}" />.
+	k: <gale:variable expr="${#knowledge}" />.
+</p>
+</body>
+</html>
