@@ -22,6 +22,23 @@ name was changed to the Tennis Masters Series (TMS) and then changed to ATP Mast
 World Tour Finals. Up until 2007, most Masters Series finals were contested as best of five set matches. Currently, all Masters Series events are decided in best of 
 three set matches. Rafael Nadal holds the record for the most titles with 18.</p>
 
+
+<gale:test title="Let's Check it" total="2" action="#{#own_knowledge, value};" expr="100>${#own_knowledge}.intValue()" ask="2" alt="" verbose="true">
+	<gale:question answers="3" right="1">
+	Masters 1000was introduced in
+		<gale:answer correct="false">1992	</gale:answer>
+		<gale:answer correct="false">1987</gale:answer>
+		<gale:answer correct="true">1900</gale:answer>
+	</gale:question>
+	
+	<gale:question answers="2" right="1">
+	What was the previous name of this serie?
+		<gale:answer correct="true">ATP Masters Series	</gale:answer>
+		<gale:answer correct="false">Tennis Masters Series (TMS)</gale:answer>
+	</gale:question>	
+	
+</gale:test>
+
 <p>
 	s: <gale:variable expr="${#suitability}" />.
 	v: <gale:variable expr="${#visited}" />.
