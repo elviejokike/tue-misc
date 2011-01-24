@@ -6,7 +6,7 @@
     <authorname>test1</authorname>
     <authorisation>readwrite</authorisation>
     <creationtime>1294742195876</creationtime>
-    <updatetime>1295822068968</updatetime>
+    <updatetime>1295824010171</updatetime>
     <title>tennis-as</title>
     <description>Tennis</description>
   </header>
@@ -207,7 +207,7 @@
           <parameter name="" type=""/>
           <position>
             <x>535</x>
-            <y>158</y>
+            <y>152.5</y>
           </position>
           <camSocket>
             <uuid>F23258B2-ED05-EA55-64C1-74AE6EAF05AD</uuid>
@@ -420,8 +420,8 @@
           <colour>#000000</colour>
           <parameter name="level" type="float">70</parameter>
           <position>
-            <x>893</x>
-            <y>596</y>
+            <x>207.75</x>
+            <y>515.75</y>
           </position>
           <camSocket>
             <uuid>530635A8-3CCF-59A8-04A4-AAF69923DA79</uuid>
@@ -429,8 +429,8 @@
             <colour>0</colour>
             <shape>SocketShape</shape>
             <position>
-              <x>793</x>
-              <y>596</y>
+              <x>107.75</x>
+              <y>515.75</y>
             </position>
             <entity>
               <dmId>A21B7498-FBC0-EFD0-DE8B-4907118D3FB3</dmId>
@@ -442,8 +442,8 @@
             <colour>0</colour>
             <shape>SocketShape</shape>
             <position>
-              <x>1024</x>
-              <y>596</y>
+              <x>338.75</x>
+              <y>515.75</y>
             </position>
             <entity>
               <dmId>87CE5516-5B59-C4F6-8979-491C99F1BB71</dmId>
@@ -642,6 +642,80 @@
             </entity>
             <entity>
               <dmId>DB997C9C-1C8F-0D9B-4D80-48E615F2F29A</dmId>
+            </entity>
+          </camSocket>
+        </crt>
+        <crt type="crt">
+          <camCrtUuid>8908264E-7643-C647-1852-B514C935A032</camCrtUuid>
+          <uuid>528600E3-335E-47DF-CF3A-B5145DE9A754</uuid>
+          <shape>diamond</shape>
+          <colour>#000000</colour>
+          <parameter name="level" type="float">1.0</parameter>
+          <position>
+            <x>896</x>
+            <y>501.5</y>
+          </position>
+          <camSocket>
+            <uuid>57C4E6CD-8D98-07FE-B421-B514C9355024</uuid>
+            <socketid>7a5cad21-09d6-993b-b464-df0cb59d9052</socketid>
+            <colour>0</colour>
+            <shape>SocketShape</shape>
+            <position>
+              <x>729.5</x>
+              <y>492.5</y>
+            </position>
+            <entity>
+              <dmId>81E9A4B1-4D31-F963-5367-48E92DD1EA35</dmId>
+            </entity>
+          </camSocket>
+          <camSocket>
+            <uuid>555116EA-FF52-186C-1CF4-B514C935AEBF</uuid>
+            <socketid>e317cc9a-3c87-e5ba-98d1-df0cb59d0f23</socketid>
+            <colour>0</colour>
+            <shape>SocketShape</shape>
+            <position>
+              <x>996.5</x>
+              <y>487</y>
+            </position>
+            <entity>
+              <dmId>BD38A72B-8D36-2BFC-0018-4904A6B79F8C</dmId>
+            </entity>
+          </camSocket>
+        </crt>
+        <crt type="crt">
+          <camCrtUuid>1E832B8A-62EA-4B36-166B-B520D243D8FC</camCrtUuid>
+          <uuid>1C9F8592-DE81-CDAB-4E7C-B52016D32874</uuid>
+          <shape>diamond</shape>
+          <colour>#000000</colour>
+          <parameter name="level" type="float">0.75</parameter>
+          <position>
+            <x>842</x>
+            <y>571</y>
+          </position>
+          <camSocket>
+            <uuid>01D83BC7-4177-8ACF-C5D0-B520D2434D65</uuid>
+            <socketid>7a5cad21-09d6-993b-b464-df0cb59d9052</socketid>
+            <colour>0</colour>
+            <shape>SocketShape</shape>
+            <position>
+              <x>744</x>
+              <y>571</y>
+            </position>
+            <entity>
+              <dmId>81E9A4B1-4D31-F963-5367-48E92DD1EA35</dmId>
+            </entity>
+          </camSocket>
+          <camSocket>
+            <uuid>918F0083-62F3-612C-8DDB-B520D2430ECE</uuid>
+            <socketid>e317cc9a-3c87-e5ba-98d1-df0cb59d0f23</socketid>
+            <colour>0</colour>
+            <shape>SocketShape</shape>
+            <position>
+              <x>951</x>
+              <y>571</y>
+            </position>
+            <entity>
+              <dmId>26A9E256-8F2D-EF9B-17BC-4934E1A401A6</dmId>
             </entity>
           </camSocket>
         </crt>
@@ -1492,6 +1566,206 @@ if (${->(parent)}.length > 0)
                 <associateddmrelations>
                   <relationshiptype>parent</relationshiptype>
                 </associateddmrelations>
+              </crt>
+            </body>
+          </model>
+          <model>
+            <header>
+              <modeluuid>528600E3-335E-47DF-CF3A-B5145DE9A754</modeluuid>
+              <modeltype>crt</modeltype>
+              <authoruuid>ed994594-9937-4b4f-9307-f5c2ff07381c</authoruuid>
+              <authorname>test1</authorname>
+              <authorisation>readwrite</authorisation>
+              <creationtime>1284502213193</creationtime>
+              <updatetime>1295823166953</updatetime>
+              <title>G-knowledgeHistory-Propagation</title>
+              <description>GRAPPLE Default: knowledgeHistory Propagation CRT</description>
+              <used>1</used>
+              <selected>0</selected>
+            </header>
+            <body>
+              <crt>
+                <comment/>
+                <crtdialect>CRT</crtdialect>
+                <parameter name="level" type="float">1.0</parameter>
+                <visualrepresentation>
+                  <colour>#000000</colour>
+                  <shape>diamond</shape>
+                </visualrepresentation>
+                <adaptationbehaviour>
+                  <code type="gale"><![CDATA[%source% {
+  #knowledgeHistory {event + `
+  #{%target%#knowledgeHistory, ${%target%#knowledgeHistory}+changed.diff*%level%};
+`}
+}
+]]></code>
+                  <usermodel>
+                    <umvariable>
+                      <umvarname>knowledgeHistory</umvarname>
+                      <socket>source</socket>
+                      <public>false</public>
+                      <persistent>true</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range>
+                        <from>0</from>
+                        <to>100</to>
+                      </range>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                    <umvariable>
+                      <umvarname>knowledgeHistory</umvarname>
+                      <socket>target</socket>
+                      <public>false</public>
+                      <persistent>true</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range>
+                        <from>0</from>
+                        <to>100</to>
+                      </range>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                  </usermodel>
+                </adaptationbehaviour>
+                <constraints>
+                  <loopsallowed>false</loopsallowed>
+                  <attributeconstraints/>
+                  <umvariableconstraints/>
+                </constraints>
+                <crtsockets>
+                  <socket type="source">
+                    <uuid>7a5cad21-09d6-993b-b464-df0cb59d9052</uuid>
+                    <name>source</name>
+                    <mincardinality>1</mincardinality>
+                    <maxcardinality>*</maxcardinality>
+                  </socket>
+                  <socket type="target">
+                    <uuid>e317cc9a-3c87-e5ba-98d1-df0cb59d0f23</uuid>
+                    <name>target</name>
+                    <mincardinality>1</mincardinality>
+                    <maxcardinality>*</maxcardinality>
+                  </socket>
+                </crtsockets>
+                <associateddmrelations/>
+              </crt>
+            </body>
+          </model>
+          <model>
+            <header>
+              <modeluuid>1C9F8592-DE81-CDAB-4E7C-B52016D32874</modeluuid>
+              <modeltype>crt</modeltype>
+              <authoruuid>ed994594-9937-4b4f-9307-f5c2ff07381c</authoruuid>
+              <authorname>test1</authorname>
+              <authorisation>readwrite</authorisation>
+              <creationtime>1284502213193</creationtime>
+              <updatetime>1295823935187</updatetime>
+              <title>G-knowledgeShots-Propagation</title>
+              <description>GRAPPLE Default: knowledgeShots Propagation CRT</description>
+              <used>1</used>
+              <selected>0</selected>
+            </header>
+            <body>
+              <crt>
+                <comment/>
+                <crtdialect>CRT</crtdialect>
+                <parameter name="level" type="float">0.75</parameter>
+                <visualrepresentation>
+                  <colour>#000000</colour>
+                  <shape>diamond</shape>
+                </visualrepresentation>
+                <adaptationbehaviour>
+                  <code type="gale"><![CDATA[%source% {
+  #knowledgeShots {event + `
+  #{%target%#knowledgeShots,${%source%#knowledgeShots}*%level%};
+`}
+}
+]]></code>
+                  <usermodel>
+                    <umvariable>
+                      <umvarname>knowledgeShots</umvarname>
+                      <socket>source</socket>
+                      <public>false</public>
+                      <persistent>true</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range>
+                        <from>0</from>
+                        <to>100</to>
+                      </range>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                    <umvariable>
+                      <umvarname>knowledgeShots</umvarname>
+                      <socket>target</socket>
+                      <public>false</public>
+                      <persistent>true</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range>
+                        <from>0</from>
+                        <to>100</to>
+                      </range>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                  </usermodel>
+                </adaptationbehaviour>
+                <constraints>
+                  <loopsallowed>false</loopsallowed>
+                  <attributeconstraints/>
+                  <umvariableconstraints/>
+                </constraints>
+                <crtsockets>
+                  <socket type="source">
+                    <uuid>7a5cad21-09d6-993b-b464-df0cb59d9052</uuid>
+                    <name>source</name>
+                    <mincardinality>1</mincardinality>
+                    <maxcardinality>*</maxcardinality>
+                  </socket>
+                  <socket type="target">
+                    <uuid>e317cc9a-3c87-e5ba-98d1-df0cb59d0f23</uuid>
+                    <name>target</name>
+                    <mincardinality>1</mincardinality>
+                    <maxcardinality>*</maxcardinality>
+                  </socket>
+                </crtsockets>
+                <associateddmrelations/>
               </crt>
             </body>
           </model>
