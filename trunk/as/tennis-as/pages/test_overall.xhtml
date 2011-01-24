@@ -4,24 +4,19 @@
  xmlns:gale="http://gale.tue.nl/adaptation">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="resources/style.css" type="text/css" />
   <title>Pre-Test</title>
 </head>
 <body>
 	<gale:if expr="${#done}"><gale:then>
-	<h1>Pre-Test Result</h1>
+	<h1>Test Result</h1>
 	<p>
 	Your test score was <gale:variable expr="${#knowledge}.intValue()" />.
 	</p>
 	</gale:then>
 	</gale:if>
-
-	<gale:test title="Pre-Test for the Tennis Course" total="1" action="#{#knowledge, value};#{#done, true};" expr="true" ask="3" alt="[You are not allowed to repeat this test.]" verbose="true">
 	
-	<p>
-	This is a short test to verify your knowledge about adaptive Tennis.
-	Your score for this test may influence some of the adaptation in the tutorial but is otherwise
-	not important.
-	</p>
+	<gale:test title="Test for the Tennis Course" total="1" action="#{#knowledge, value};#{#knowledgeHistory,value};#{#knowledgeShots,value};#{#knowledgeGame,value};#{#knowledgeTournaments,value};#{#done, true};" expr="true" ask="8" alt="[You are not allowed to repeat this test.]" verbose="true">
 	
 	
 	<gale:question answers="2" right="1">
@@ -31,21 +26,58 @@
 	</gale:question>
 	
 	
+	<gale:question answers="2" right="1">
+		What is a break point?
+		<gale:answer correct="false">Whenever the player who is in the lead in the game needs only one more point to win the game</gale:answer>
+		<gale:answer correct="true">If the receiver, not the server, has a chance to win the game in the next rally</gale:answer>
+	</gale:question>
+	
+	
+	<gale:question answers="3" right="2">
+		The Tennis game structure is described by: 
+		<gale:answer correct="false">A match consist of games, a game consist of sets and a set consist of points.</gale:answer>
+		<gale:answer correct="true">A match consists of sets, a set consist of games and games consist of points.</gale:answer>
+		<gale:answer correct="true">A match consists of 3 or 5 sets.</gale:answer>
+	</gale:question>
+	
 	<gale:question answers="3" right="1">
-	Who is the actual number 1 in the ATP classification?.
-		<gale:answer correct="false">Roger Federer	</gale:answer>
-		<gale:answer correct="true">Rafael Nadal	</gale:answer>
-		<gale:answer correct="false">Nova Djokovic	</gale:answer>
+		Who is the actual number 1 in the WTA classification?.
+		<gale:answer correct="true">Caroline Wozniacki</gale:answer>
+		<gale:answer correct="false">Vera Zvonareva	</gale:answer>
+		<gale:answer correct="false">Kim Clijsters</gale:answer>
 	</gale:question>
 	
 	
 	<gale:question answers="4" right="1">
-		Who is this girl?.
-		<p><img src="http://www.celebs101.com/media/2010/7/14/Ana%20Ivanovic.jpg"></img></p>	
-		<gale:answer correct="false">Justine Hennin</gale:answer>
-		<gale:answer correct="true">Ana Ivanovic	</gale:answer>
-		<gale:answer correct="false"> Virginia Slims	</gale:answer>
-		<gale:answer correct="false"> Ana Kurnikova	</gale:answer>
+		Who is this player?.
+		<p><img width="80px" src="http://www.tennisgrandstand.com/wp-content/uploads/2009/08/roger-federer-nike-deal.jpg"></img></p>	
+		<gale:answer correct="true">R. Federer</gale:answer>
+		<gale:answer correct="false">R. Nadal	</gale:answer>
+		<gale:answer correct="false">N. Djokovik</gale:answer>
+		<gale:answer correct="false">P. Sampras	</gale:answer>
+	</gale:question>
+	
+	<gale:question answers="4" right="1">
+		In which country does the Rolland Garros takes place?
+		<gale:answer correct="false">England</gale:answer>
+		<gale:answer correct="false">United States</gale:answer>
+		<gale:answer correct="true">France</gale:answer>
+		<gale:answer correct="false">Australia</gale:answer>
+	</gale:question>
+	
+	<gale:question answers="4" right="1">
+		The ATP World Tour Finals is played with the top "X" playes in the ATP ranking. How many ?
+		<gale:answer correct="false">6</gale:answer>
+		<gale:answer correct="false">10</gale:answer>
+		<gale:answer correct="true">8</gale:answer>
+		<gale:answer correct="false">12</gale:answer>
+	</gale:question>
+	
+	<gale:question answers="3" right="1">
+		How many Grand Slamps tournaments have won Roger Federer so far?
+		<gale:answer correct="false">14</gale:answer>
+		<gale:answer correct="false">15</gale:answer>
+		<gale:answer correct="true">16</gale:answer>
 	</gale:question>
 	
 	<gale:result>
@@ -53,6 +85,12 @@
 	</gale:result>
 	
 	</gale:test>
+
+<p>
+	s: <gale:variable expr="${#suitability}" />.
+	v: <gale:variable expr="${#visited}" />.
+	k: <gale:variable expr="${#knowledge}" />.
+</p>
 
 </body>
 </html>
