@@ -21,6 +21,11 @@ img{
 	background: #fff; /*Inner border color*/
 }
 
+span.ball {
+	background-image: url("images/ball.png");
+	width: 30px;
+	background-repeat: no-repeat;
+}
 span h1 {
 	font-size: 12px;
 }

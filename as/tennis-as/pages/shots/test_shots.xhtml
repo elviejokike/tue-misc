@@ -4,66 +4,53 @@
  xmlns:gale="http://gale.tue.nl/adaptation">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="../resources/style.css" type="text/css" />
   <title></title>
 </head>
 <body>
 
-<gale:if expr="${#done}"><gale:then>
+	<gale:if expr="true"><gale:then>
 	<h1>Shots Test Result</h1>
 	<p>
-	Your test score was <gale:variable expr="${#knowledge}.intValue()" />.
+	Your test score was <gale:variable expr="${#knowledgeShots}.intValue()" />.
 	</p>
 	</gale:then>
 	</gale:if>
 	
-	<gale:test title="Shots Test for the Tennis Course" total="1" action="#{#knowledge, value};#{#done, true};" expr="true" ask="3" alt="[You are not allowed to repeat this test.]" verbose="true">
+	<gale:test title="Shots-Test" total="1" action="#{#knowledgeShots,value};#{#done, true};" expr="true" ask="3" alt="[You are not allowed to repeat this test.]" verbose="true">
 	
 	<p>
-	This is a short test to verify your knowledge about the shots in tennis.
+	This is a short test to verify your knowledge about Shots in tennis
 	</p>
 	
+	
 	<gale:question answers="2" right="1">
-	<p>True or False: An ace can only be achieved during the service of the player.</p>
-		<p><gale:answer correct="true">True	</gale:answer></p>
-		<p><gale:answer correct="false">False	</gale:answer></p>
+		True or False: An ace can only be achieved during the service of the player.
+		<gale:answer correct="true">True	</gale:answer>
+		<gale:answer correct="false">False	</gale:answer>
 	</gale:question>
 	
 	
 	<gale:question answers="2" right="1">
-	<p>True or False: Most tennis players have a better forehand than a backhand.</p>
-		<p><gale:answer correct="true">True</gale:answer></p>
-		<p><gale:answer correct="false">False</gale:answer></p>
+		True or False: Most tennis players have a better forehand than a backhand.
+		<gale:answer correct="true">True</gale:answer>
+		<gale:answer correct="false">False</gale:answer>
 	</gale:question>
 	
 	
 	<gale:question answers="2" right="1">
-	<p>True or False: Backspin and topspin do not influence the trajectory of the ball. </p>
-		<p><gale:answer correct="false">True</gale:answer></p>
-		<p><gale:answer correct="true">False</gale:answer></p>
+		True or False: Backspin and topspin do not influence the trajectory of the ball.
+		<gale:answer correct="false">True</gale:answer>
+		<gale:answer correct="true">False</gale:answer>
 	</gale:question>
+	
+	
 	
 	<gale:result>
-	Your score was <gale:variable expr="${#knowledge}.intValue()" />. 
+	Your score was <gale:variable expr="${#knowledgeHistory}.intValue()" />. 
 	</gale:result>
 	
-	</gale:test>
-
-
-
-<ul>
-<li>
-<gale:a href="forehand">Forehand</gale:a>
-</li>
-<li>
-<gale:a href="backhand">backhand</gale:a>
-</li>
-<li>
-<gale:a href="serve">Serve</gale:a>
-</li>
-<li>
-<gale:a href="other_shots">Other shots</gale:a>
-</li>
-</ul>
+	</gale:test>	
 
 
 </body>
