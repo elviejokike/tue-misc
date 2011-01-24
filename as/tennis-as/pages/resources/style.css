@@ -22,7 +22,7 @@ img{
 }
 
 span.ball {
-	background-image: url("images/ball.png");
+	background-image: url("images/arrow.png");
 	width: 30px;
 	background-repeat: no-repeat;
 }

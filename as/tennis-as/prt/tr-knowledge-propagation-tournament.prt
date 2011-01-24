@@ -1,0 +1,115 @@
+<model>
+  <header>
+    <title>G-knowledgeTournaments-Propagation</title>
+    <description>GRAPPLE Default: knowledgeTournaments Propagation CRT</description>
+    <creationtime>1284502213193</creationtime>
+    <updatetime>1288017784944</updatetime>
+    <modeluuid>9BB45BD3-80CF-F029-7EFA-DF0C0F12ABF1</modeluuid>
+    <authoruuid>97fc5b7e-1ce1-4c65-a12a-279d072fc651</authoruuid>
+    <authorisation>readwrite</authorisation>
+    <modeltype>crt</modeltype>
+  </header>
+  <body>
+    <crt>
+      <comment/>
+      <crtdialect>CRT</crtdialect>
+      <parameter name="level" type="float">0.75</parameter>
+      <visualrepresentation>
+        <colour>#000000</colour>
+        <shape>diamond</shape>
+      </visualrepresentation>
+      <adaptationbehaviour>
+        <code type="gale"><![CDATA[%source% {  #knowledgeTournaments {event + `
+   	#{%target%#knowledgeTournaments,${%source%#knowledgeTournaments}*%level%};`}}]]></code>
+        <usermodel>
+        	<umvariable>
+            <umvarname>knowledgeHistory</umvarname>
+            <socket>source</socket>
+            <public>false</public>
+            <persistent>true</persistent>
+            <location>
+              <web/>
+              <remotecourse>
+                <remotecoursename/>
+                <resource>
+                  <resourceuniqueid/>
+                  <resourcename/>
+                </resource>
+              </remotecourse>
+            </location>
+            <type>float</type>
+            <range>
+              <from>0</from>
+              <to>100</to>
+            </range>
+            <default><![CDATA[0]]></default>
+          </umvariable>
+          <umvariable>
+            <umvarname>knowledgeTournaments</umvarname>
+            <socket>source</socket>
+            <public>false</public>
+            <persistent>true</persistent>
+            <location>
+              <web/>
+              <remotecourse>
+                <remotecoursename/>
+                <resource>
+                  <resourceuniqueid/>
+                  <resourcename/>
+                </resource>
+              </remotecourse>
+            </location>
+            <type>float</type>
+            <range>
+              <from>0</from>
+              <to>100</to>
+            </range>
+            <default><![CDATA[0]]></default>
+          </umvariable>
+          <umvariable>
+            <umvarname>knowledgeTournaments</umvarname>
+            <socket>target</socket>
+            <public>false</public>
+            <persistent>true</persistent>
+            <location>
+              <web/>
+              <remotecourse>
+                <remotecoursename/>
+                <resource>
+                  <resourceuniqueid/>
+                  <resourcename/>
+                </resource>
+              </remotecourse>
+            </location>
+            <type>float</type>
+            <range>
+              <from>0</from>
+              <to>100</to>
+            </range>
+            <default><![CDATA[0]]></default>
+          </umvariable>
+        </usermodel>
+      </adaptationbehaviour>
+      <constraints>
+        <loopsallowed>false</loopsallowed>
+        <attributeconstraints/>
+        <umvariableconstraints/>
+      </constraints>
+      <crtsockets>
+        <socket type="source">
+          <uuid>7a5cad21-09d6-993b-b464-df0cb59d9052</uuid>
+          <name>source</name>
+          <mincardinality>1</mincardinality>
+          <maxcardinality>*</maxcardinality>
+        </socket>
+        <socket type="target">
+          <uuid>e317cc9a-3c87-e5ba-98d1-df0cb59d0f23</uuid>
+          <name>target</name>
+          <mincardinality>1</mincardinality>
+          <maxcardinality>*</maxcardinality>
+        </socket>
+      </crtsockets>
+      <associateddmrelations/>
+    </crt>
+  </body>
+</model>
