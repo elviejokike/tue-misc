@@ -6,7 +6,7 @@
     <authorname>test1</authorname>
     <authorisation>readwrite</authorisation>
     <creationtime>1294742195876</creationtime>
-    <updatetime>1295899906921</updatetime>
+    <updatetime>1295903575328</updatetime>
     <title>tennis-as</title>
     <description>Tennis</description>
   </header>
@@ -53,7 +53,7 @@
             <colour>0</colour>
             <shape>SocketShape</shape>
             <position>
-              <x>194.5</x>
+              <x>205</x>
               <y>391.5</y>
             </position>
             <entity>
@@ -556,7 +556,7 @@
             <colour>0</colour>
             <shape>SocketShape</shape>
             <position>
-              <x>1027.5</x>
+              <x>1038</x>
               <y>92</y>
             </position>
             <entity>
@@ -670,8 +670,8 @@
           <colour>#000000</colour>
           <parameter name="level" type="float">1.0</parameter>
           <position>
-            <x>896</x>
-            <y>501.5</y>
+            <x>868</x>
+            <y>493.5</y>
           </position>
           <camSocket>
             <uuid>57C4E6CD-8D98-07FE-B421-B514C9355024</uuid>
@@ -679,8 +679,8 @@
             <colour>0</colour>
             <shape>SocketShape</shape>
             <position>
-              <x>729.5</x>
-              <y>492.5</y>
+              <x>659.5</x>
+              <y>477</y>
             </position>
             <entity>
               <dmId>81E9A4B1-4D31-F963-5367-48E92DD1EA35</dmId>
@@ -692,8 +692,8 @@
             <colour>0</colour>
             <shape>SocketShape</shape>
             <position>
-              <x>996.5</x>
-              <y>487</y>
+              <x>879.5</x>
+              <y>471.5</y>
             </position>
             <entity>
               <dmId>BD38A72B-8D36-2BFC-0018-4904A6B79F8C</dmId>
@@ -729,17 +729,85 @@
             <colour>0</colour>
             <shape>SocketShape</shape>
             <position>
-              <x>943.5</x>
-              <y>571</y>
+              <x>898</x>
+              <y>563.5</y>
             </position>
-            <entity>
-              <dmId>00D474F8-79DE-94B0-F35C-74497AAB8199</dmId>
-            </entity>
             <entity>
               <dmId>26A9E256-8F2D-EF9B-17BC-4934E1A401A6</dmId>
             </entity>
+          </camSocket>
+        </crt>
+        <crt type="crt">
+          <camCrtUuid>7CA46E38-8978-373A-536E-B9CDCA46D7A5</camCrtUuid>
+          <uuid>2B9492E0-98C0-586D-E34F-B9CC98CBB4BE</uuid>
+          <shape>diamond</shape>
+          <colour>#000000</colour>
+          <parameter name="level" type="float">0.75</parameter>
+          <position>
+            <x>802</x>
+            <y>612</y>
+          </position>
+          <camSocket>
+            <uuid>C114BB89-DDAB-C0F5-840E-B9CDCA46D1E4</uuid>
+            <socketid>7a5cad21-09d6-993b-b464-df0cb59d9052</socketid>
+            <colour>0</colour>
+            <shape>SocketShape</shape>
+            <position>
+              <x>704</x>
+              <y>612</y>
+            </position>
+            <entity>
+              <dmId>81E9A4B1-4D31-F963-5367-48E92DD1EA35</dmId>
+            </entity>
+          </camSocket>
+          <camSocket>
+            <uuid>6EEA3637-C81C-6B4D-C6F4-B9CDCA46A6F9</uuid>
+            <socketid>e317cc9a-3c87-e5ba-98d1-df0cb59d0f23</socketid>
+            <colour>0</colour>
+            <shape>SocketShape</shape>
+            <position>
+              <x>923</x>
+              <y>612</y>
+            </position>
             <entity>
               <dmId>D8AC23F0-1B53-2190-8127-491AB9B72B54</dmId>
+            </entity>
+          </camSocket>
+        </crt>
+        <crt type="crt">
+          <camCrtUuid>13FABA09-A485-2E8E-3562-B9D964EB54A6</camCrtUuid>
+          <uuid>6744F04B-13AB-CAB8-1D9A-B9D7F0E87FB5</uuid>
+          <shape>diamond</shape>
+          <colour>#000000</colour>
+          <parameter name="level" type="float">0.75</parameter>
+          <position>
+            <x>1078</x>
+            <y>560</y>
+          </position>
+          <camSocket>
+            <uuid>343955C7-EE37-3FA0-7214-B9D964EB33DB</uuid>
+            <socketid>7a5cad21-09d6-993b-b464-df0cb59d9052</socketid>
+            <colour>0</colour>
+            <shape>SocketShape</shape>
+            <position>
+              <x>980</x>
+              <y>560</y>
+            </position>
+            <entity>
+              <dmId>81E9A4B1-4D31-F963-5367-48E92DD1EA35</dmId>
+            </entity>
+          </camSocket>
+          <camSocket>
+            <uuid>5A171159-1CFD-82B1-CF33-B9D964EB89B0</uuid>
+            <socketid>e317cc9a-3c87-e5ba-98d1-df0cb59d0f23</socketid>
+            <colour>0</colour>
+            <shape>SocketShape</shape>
+            <position>
+              <x>1205.5</x>
+              <y>560</y>
+            </position>
+            <entity>
+              <dmId>00D474F8-79DE-94B0-F35C-74497AAB8199</dmId>
             </entity>
           </camSocket>
         </crt>
@@ -1748,6 +1816,250 @@ if (${->(parent)}.length > 0)
                     </umvariable>
                     <umvariable>
                       <umvarname>knowledgeShots</umvarname>
+                      <socket>target</socket>
+                      <public>false</public>
+                      <persistent>true</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range>
+                        <from>0</from>
+                        <to>100</to>
+                      </range>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                  </usermodel>
+                </adaptationbehaviour>
+                <constraints>
+                  <loopsallowed>false</loopsallowed>
+                  <attributeconstraints/>
+                  <umvariableconstraints/>
+                </constraints>
+                <crtsockets>
+                  <socket type="source">
+                    <uuid>7a5cad21-09d6-993b-b464-df0cb59d9052</uuid>
+                    <name>source</name>
+                    <mincardinality>1</mincardinality>
+                    <maxcardinality>*</maxcardinality>
+                  </socket>
+                  <socket type="target">
+                    <uuid>e317cc9a-3c87-e5ba-98d1-df0cb59d0f23</uuid>
+                    <name>target</name>
+                    <mincardinality>1</mincardinality>
+                    <maxcardinality>*</maxcardinality>
+                  </socket>
+                </crtsockets>
+                <associateddmrelations/>
+              </crt>
+            </body>
+          </model>
+          <model>
+            <header>
+              <modeluuid>2B9492E0-98C0-586D-E34F-B9CC98CBB4BE</modeluuid>
+              <modeltype>crt</modeltype>
+              <authoruuid>ed994594-9937-4b4f-9307-f5c2ff07381c</authoruuid>
+              <authorname>test1</authorname>
+              <authorisation>readwrite</authorisation>
+              <creationtime>1284502213193</creationtime>
+              <updatetime>1295902349515</updatetime>
+              <title>G-knowledgeGame-Propagation</title>
+              <description>GRAPPLE Default: knowledgeGame Propagation CRT</description>
+              <used>1</used>
+              <selected>0</selected>
+            </header>
+            <body>
+              <crt>
+                <comment/>
+                <crtdialect>CRT</crtdialect>
+                <parameter name="level" type="float">0.75</parameter>
+                <visualrepresentation>
+                  <colour>#000000</colour>
+                  <shape>diamond</shape>
+                </visualrepresentation>
+                <adaptationbehaviour>
+                  <code type="gale"><![CDATA[%source% {
+  #knowledgeGame {event + `
+   	#{%target%#knowledgeGame,${%source%#knowledgeGame}*%level%};
+`}
+}
+]]></code>
+                  <usermodel>
+                    <umvariable>
+                      <umvarname>knowledgeHistory</umvarname>
+                      <socket>source</socket>
+                      <public>false</public>
+                      <persistent>true</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range>
+                        <from>0</from>
+                        <to>100</to>
+                      </range>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                    <umvariable>
+                      <umvarname>knowledgeGame</umvarname>
+                      <socket>source</socket>
+                      <public>false</public>
+                      <persistent>true</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range>
+                        <from>0</from>
+                        <to>100</to>
+                      </range>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                    <umvariable>
+                      <umvarname>knowledgeGame</umvarname>
+                      <socket>target</socket>
+                      <public>false</public>
+                      <persistent>true</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range>
+                        <from>0</from>
+                        <to>100</to>
+                      </range>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                  </usermodel>
+                </adaptationbehaviour>
+                <constraints>
+                  <loopsallowed>false</loopsallowed>
+                  <attributeconstraints/>
+                  <umvariableconstraints/>
+                </constraints>
+                <crtsockets>
+                  <socket type="source">
+                    <uuid>7a5cad21-09d6-993b-b464-df0cb59d9052</uuid>
+                    <name>source</name>
+                    <mincardinality>1</mincardinality>
+                    <maxcardinality>*</maxcardinality>
+                  </socket>
+                  <socket type="target">
+                    <uuid>e317cc9a-3c87-e5ba-98d1-df0cb59d0f23</uuid>
+                    <name>target</name>
+                    <mincardinality>1</mincardinality>
+                    <maxcardinality>*</maxcardinality>
+                  </socket>
+                </crtsockets>
+                <associateddmrelations/>
+              </crt>
+            </body>
+          </model>
+          <model>
+            <header>
+              <modeluuid>6744F04B-13AB-CAB8-1D9A-B9D7F0E87FB5</modeluuid>
+              <modeltype>crt</modeltype>
+              <authoruuid>ed994594-9937-4b4f-9307-f5c2ff07381c</authoruuid>
+              <authorname>test1</authorname>
+              <authorisation>readwrite</authorisation>
+              <creationtime>1284502213193</creationtime>
+              <updatetime>1295903092984</updatetime>
+              <title>G-knowledgeTournaments-Propagation</title>
+              <description>GRAPPLE Default: knowledgeTournaments Propagation CRT</description>
+              <used>1</used>
+              <selected>0</selected>
+            </header>
+            <body>
+              <crt>
+                <comment/>
+                <crtdialect>CRT</crtdialect>
+                <parameter name="level" type="float">0.75</parameter>
+                <visualrepresentation>
+                  <colour>#000000</colour>
+                  <shape>diamond</shape>
+                </visualrepresentation>
+                <adaptationbehaviour>
+                  <code type="gale"><![CDATA[%source% {
+  #knowledgeTournaments {event + `
+   	#{%target%#knowledgeTournaments,${%source%#knowledgeTournaments}*%level%};
+`}
+}
+]]></code>
+                  <usermodel>
+                    <umvariable>
+                      <umvarname>knowledgeHistory</umvarname>
+                      <socket>source</socket>
+                      <public>false</public>
+                      <persistent>true</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range>
+                        <from>0</from>
+                        <to>100</to>
+                      </range>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                    <umvariable>
+                      <umvarname>knowledgeTournaments</umvarname>
+                      <socket>source</socket>
+                      <public>false</public>
+                      <persistent>true</persistent>
+                      <location>
+                        <web/>
+                        <remotecourse>
+                          <remotecoursename/>
+                          <resource>
+                            <resourceuniqueid/>
+                            <resourcename/>
+                          </resource>
+                        </remotecourse>
+                      </location>
+                      <type>float</type>
+                      <range>
+                        <from>0</from>
+                        <to>100</to>
+                      </range>
+                      <default><![CDATA[0]]></default>
+                    </umvariable>
+                    <umvariable>
+                      <umvarname>knowledgeTournaments</umvarname>
                       <socket>target</socket>
                       <public>false</public>
                       <persistent>true</persistent>
