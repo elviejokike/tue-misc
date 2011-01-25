@@ -17,7 +17,7 @@
 	</gale:then>
 	</gale:if>
 	
-	<gale:test title="Shots-Test" total="1" action="#{#knowledgeShots,value};#{#done, true};" expr="true" ask="3" alt="[You are not allowed to repeat this test.]" verbose="true">
+	<gale:test title="Shots-Test" total="1" action="#{#knowledge,value};#{#knowledgeShots,value};#{#done, true};" expr="true" ask="3" alt="[You are not allowed to repeat this test.]" verbose="true">
 	
 	<p>
 	This is a short test to verify your knowledge about Shots in tennis
@@ -51,7 +51,12 @@
 	</gale:result>
 	
 	</gale:test>	
-
+	
+<p>
+	s: <gale:variable expr="${#suitability}" />.
+	v: <gale:variable expr="${#visited}" />.
+	k: <gale:variable expr="${#knowledge}" />.
+</p>
 
 </body>
 </html>
