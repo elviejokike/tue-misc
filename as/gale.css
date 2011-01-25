@@ -16,7 +16,9 @@ a.bad:hover        {text-decoration:none;color:grey;}
 a.bad:link         {text-decoration:none;color:white;}
 a.bad:visited      {text-decoration:none;color:grey;}
 
-
+body {
+	color: #FFFFFF;
+}
 
 #gale-nav li {
     list-style: none;
