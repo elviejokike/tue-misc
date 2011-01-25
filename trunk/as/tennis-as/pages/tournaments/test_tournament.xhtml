@@ -17,7 +17,7 @@
 	</gale:then>
 	</gale:if>
 	
-	<gale:test title="Tournaments-Test" total="1" action="#{#knowledgeTournaments,value};#{#done, true};" expr="true" ask="3" alt="[You are not allowed to repeat this test.]" verbose="true">
+	<gale:test title="Tournaments-Test" total="1" action="#{#knowledgeTournaments,value};#{#done, true};" expr="!${#done}" ask="3" alt="[You are not allowed to repeat this test.]" verbose="true">
 	
 	<p>
 	This is a short test to verify your knowledge about Tournaments in tennis
